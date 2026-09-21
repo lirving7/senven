@@ -1,0 +1,4118 @@
+[
+  {
+    "viewport": "320",
+    "page": "login",
+    "path": "/login",
+    "vw": 320,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": null,
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 269,
+      "left": -269,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 320,
+    "wrapWidth": 304,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 108,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "320",
+    "page": "register",
+    "path": "/register",
+    "vw": 320,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": null,
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 269,
+      "left": -269,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 320,
+    "wrapWidth": 304,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 108,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "320",
+    "page": "home",
+    "path": "/",
+    "vw": 320,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": null,
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 269,
+      "left": -269,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 320,
+    "wrapWidth": 304,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 108,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "320",
+    "page": "jds",
+    "path": "/jds",
+    "vw": 320,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "分析岗位",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 269,
+      "left": -269,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 320,
+    "wrapWidth": 304,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 278,
+      "h": 160,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "320",
+    "page": "resumes",
+    "path": "/resumes",
+    "vw": 320,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "我的简历",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 269,
+      "left": -269,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 320,
+    "wrapWidth": 304,
+    "tooSmall": [],
+    "touchCount": 5,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 278,
+      "h": 160,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "320",
+    "page": "applications",
+    "path": "/applications",
+    "vw": 320,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "我的求职",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 269,
+      "left": -269,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 320,
+    "wrapWidth": 304,
+    "tooSmall": [],
+    "touchCount": 6,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 304,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": {
+      "w": 150,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "320",
+    "page": "goals",
+    "path": "/goals",
+    "vw": 320,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "求职目标",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 269,
+      "left": -269,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 320,
+    "wrapWidth": 304,
+    "tooSmall": [],
+    "touchCount": 5,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 278,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "320",
+    "page": "match",
+    "path": "/match",
+    "vw": 320,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "简历 × 岗位对照",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 269,
+      "left": -269,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 320,
+    "wrapWidth": 304,
+    "tooSmall": [],
+    "touchCount": 6,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 278,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "320",
+    "page": "learn",
+    "path": "/learn",
+    "vw": 320,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "学习提升",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 269,
+      "left": -269,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 320,
+    "wrapWidth": 304,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": null,
+    "btnPrimary": {
+      "w": 220,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "320",
+    "page": "projects",
+    "path": "/projects",
+    "vw": 320,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "制作项目",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 269,
+      "left": -269,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 320,
+    "wrapWidth": 304,
+    "tooSmall": [],
+    "touchCount": 5,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 220,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "320",
+    "page": "portfolio",
+    "path": "/portfolio",
+    "vw": 320,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "作品集",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 269,
+      "left": -269,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 320,
+    "wrapWidth": 304,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": null,
+    "btnPrimary": {
+      "w": 156,
+      "h": 32,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "13px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "320",
+    "page": "interview",
+    "path": "/interview",
+    "vw": 320,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "模拟面试",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 269,
+      "left": -269,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 320,
+    "wrapWidth": 304,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "320",
+    "page": "agent",
+    "path": "/agent",
+    "vw": 320,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "AI 求职助手",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 269,
+      "left": -269,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 320,
+    "wrapWidth": 304,
+    "tooSmall": [],
+    "touchCount": 5,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 112,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": {
+      "w": 278,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "320",
+    "page": "action-plans",
+    "path": "/action-plans",
+    "vw": 320,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "岗位行动计划",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 269,
+      "left": -269,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 320,
+    "wrapWidth": 304,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": null,
+    "btnPrimary": {
+      "w": 122,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "375",
+    "page": "login",
+    "path": "/login",
+    "vw": 375,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": null,
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 375,
+    "wrapWidth": 351,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 108,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "375",
+    "page": "register",
+    "path": "/register",
+    "vw": 375,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": null,
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 375,
+    "wrapWidth": 351,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 108,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "375",
+    "page": "home",
+    "path": "/",
+    "vw": 375,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": null,
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 375,
+    "wrapWidth": 351,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 108,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "375",
+    "page": "jds",
+    "path": "/jds",
+    "vw": 375,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "分析岗位",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 375,
+    "wrapWidth": 351,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 317,
+      "h": 160,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "375",
+    "page": "resumes",
+    "path": "/resumes",
+    "vw": 375,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "我的简历",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 375,
+    "wrapWidth": 351,
+    "tooSmall": [],
+    "touchCount": 5,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 317,
+      "h": 160,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "375",
+    "page": "applications",
+    "path": "/applications",
+    "vw": 375,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "我的求职",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 375,
+    "wrapWidth": 351,
+    "tooSmall": [],
+    "touchCount": 6,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 351,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": {
+      "w": 150,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "375",
+    "page": "goals",
+    "path": "/goals",
+    "vw": 375,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "求职目标",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 375,
+    "wrapWidth": 351,
+    "tooSmall": [],
+    "touchCount": 5,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 317,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "375",
+    "page": "match",
+    "path": "/match",
+    "vw": 375,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "简历 × 岗位对照",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 375,
+    "wrapWidth": 351,
+    "tooSmall": [],
+    "touchCount": 6,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 317,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "375",
+    "page": "learn",
+    "path": "/learn",
+    "vw": 375,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "学习提升",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 375,
+    "wrapWidth": 351,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": null,
+    "btnPrimary": {
+      "w": 220,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "375",
+    "page": "projects",
+    "path": "/projects",
+    "vw": 375,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "制作项目",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 375,
+    "wrapWidth": 351,
+    "tooSmall": [],
+    "touchCount": 5,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 220,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "375",
+    "page": "portfolio",
+    "path": "/portfolio",
+    "vw": 375,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "作品集",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 375,
+    "wrapWidth": 351,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": null,
+    "btnPrimary": {
+      "w": 156,
+      "h": 32,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "13px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "375",
+    "page": "interview",
+    "path": "/interview",
+    "vw": 375,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "模拟面试",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 375,
+    "wrapWidth": 351,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "375",
+    "page": "agent",
+    "path": "/agent",
+    "vw": 375,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "AI 求职助手",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 375,
+    "wrapWidth": 351,
+    "tooSmall": [],
+    "touchCount": 5,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 112,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": {
+      "w": 317,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "375",
+    "page": "action-plans",
+    "path": "/action-plans",
+    "vw": 375,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "岗位行动计划",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 375,
+    "wrapWidth": 351,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": null,
+    "btnPrimary": {
+      "w": 122,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "640",
+    "page": "login",
+    "path": "/login",
+    "vw": 640,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": null,
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 640,
+    "wrapWidth": 616,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 108,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "640",
+    "page": "register",
+    "path": "/register",
+    "vw": 640,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": null,
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 640,
+    "wrapWidth": 616,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 108,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "640",
+    "page": "home",
+    "path": "/",
+    "vw": 640,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": null,
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 640,
+    "wrapWidth": 616,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 108,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "640",
+    "page": "jds",
+    "path": "/jds",
+    "vw": 640,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "分析岗位",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 640,
+    "wrapWidth": 616,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 582,
+      "h": 160,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "640",
+    "page": "resumes",
+    "path": "/resumes",
+    "vw": 640,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "我的简历",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 640,
+    "wrapWidth": 616,
+    "tooSmall": [],
+    "touchCount": 5,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 582,
+      "h": 160,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "640",
+    "page": "applications",
+    "path": "/applications",
+    "vw": 640,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "我的求职",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 640,
+    "wrapWidth": 616,
+    "tooSmall": [],
+    "touchCount": 6,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 616,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": {
+      "w": 150,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "640",
+    "page": "goals",
+    "path": "/goals",
+    "vw": 640,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "求职目标",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 640,
+    "wrapWidth": 616,
+    "tooSmall": [],
+    "touchCount": 5,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 582,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "640",
+    "page": "match",
+    "path": "/match",
+    "vw": 640,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "简历 × 岗位对照",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 640,
+    "wrapWidth": 616,
+    "tooSmall": [],
+    "touchCount": 6,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 234,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "640",
+    "page": "learn",
+    "path": "/learn",
+    "vw": 640,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "学习提升",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 640,
+    "wrapWidth": 616,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": null,
+    "btnPrimary": {
+      "w": 220,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "640",
+    "page": "projects",
+    "path": "/projects",
+    "vw": 640,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "制作项目",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 640,
+    "wrapWidth": 616,
+    "tooSmall": [],
+    "touchCount": 5,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 220,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "640",
+    "page": "portfolio",
+    "path": "/portfolio",
+    "vw": 640,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "作品集",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 640,
+    "wrapWidth": 616,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": null,
+    "btnPrimary": {
+      "w": 156,
+      "h": 32,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "13px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "640",
+    "page": "interview",
+    "path": "/interview",
+    "vw": 640,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "模拟面试",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 640,
+    "wrapWidth": 616,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "640",
+    "page": "agent",
+    "path": "/agent",
+    "vw": 640,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "AI 求职助手",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 640,
+    "wrapWidth": 616,
+    "tooSmall": [],
+    "touchCount": 5,
+    "cardRadius": "8px",
+    "btnPrimary": {
+      "w": 112,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": {
+      "w": 582,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "640",
+    "page": "action-plans",
+    "path": "/action-plans",
+    "vw": 640,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "岗位行动计划",
+      "fontSize": "22px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 640,
+    "wrapWidth": 616,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": null,
+    "btnPrimary": {
+      "w": 122,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "768",
+    "page": "login",
+    "path": "/login",
+    "vw": 768,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": null,
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 768,
+    "wrapWidth": 736,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 108,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "768",
+    "page": "register",
+    "path": "/register",
+    "vw": 768,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": null,
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 768,
+    "wrapWidth": 736,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 108,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "768",
+    "page": "home",
+    "path": "/",
+    "vw": 768,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": null,
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 768,
+    "wrapWidth": 736,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 108,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "768",
+    "page": "jds",
+    "path": "/jds",
+    "vw": 768,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "分析岗位",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 768,
+    "wrapWidth": 736,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 694,
+      "h": 160,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "768",
+    "page": "resumes",
+    "path": "/resumes",
+    "vw": 768,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "我的简历",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 768,
+    "wrapWidth": 736,
+    "tooSmall": [],
+    "touchCount": 5,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 694,
+      "h": 160,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "768",
+    "page": "applications",
+    "path": "/applications",
+    "vw": 768,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "我的求职",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 768,
+    "wrapWidth": 736,
+    "tooSmall": [],
+    "touchCount": 6,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": {
+      "w": 150,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "768",
+    "page": "goals",
+    "path": "/goals",
+    "vw": 768,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "求职目标",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 768,
+    "wrapWidth": 736,
+    "tooSmall": [],
+    "touchCount": 5,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 694,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "768",
+    "page": "match",
+    "path": "/match",
+    "vw": 768,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "简历 × 岗位对照",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 768,
+    "wrapWidth": 736,
+    "tooSmall": [],
+    "touchCount": 6,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 290,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "768",
+    "page": "learn",
+    "path": "/learn",
+    "vw": 768,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "学习提升",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 768,
+    "wrapWidth": 736,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": null,
+    "btnPrimary": {
+      "w": 220,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "768",
+    "page": "projects",
+    "path": "/projects",
+    "vw": 768,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "制作项目",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 768,
+    "wrapWidth": 736,
+    "tooSmall": [],
+    "touchCount": 5,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 220,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "768",
+    "page": "portfolio",
+    "path": "/portfolio",
+    "vw": 768,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "作品集",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 768,
+    "wrapWidth": 736,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": null,
+    "btnPrimary": {
+      "w": 156,
+      "h": 32,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "13px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "768",
+    "page": "interview",
+    "path": "/interview",
+    "vw": 768,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "模拟面试",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 768,
+    "wrapWidth": 736,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "768",
+    "page": "agent",
+    "path": "/agent",
+    "vw": 768,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "AI 求职助手",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 768,
+    "wrapWidth": 736,
+    "tooSmall": [],
+    "touchCount": 5,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 112,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": {
+      "w": 694,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "768",
+    "page": "action-plans",
+    "path": "/action-plans",
+    "vw": 768,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "岗位行动计划",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "fixed",
+      "width": 288,
+      "left": -288,
+      "transform": "set"
+    },
+    "topbarDisplay": "flex",
+    "mainWidth": 768,
+    "wrapWidth": 736,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": null,
+    "btnPrimary": {
+      "w": 122,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "1024",
+    "page": "login",
+    "path": "/login",
+    "vw": 1024,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": null,
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 212,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 812,
+    "wrapWidth": 764,
+    "tooSmall": [],
+    "touchCount": 2,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 108,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "1024",
+    "page": "register",
+    "path": "/register",
+    "vw": 1024,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": null,
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 212,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 812,
+    "wrapWidth": 764,
+    "tooSmall": [],
+    "touchCount": 2,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 108,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "1024",
+    "page": "home",
+    "path": "/",
+    "vw": 1024,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": null,
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 212,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 812,
+    "wrapWidth": 764,
+    "tooSmall": [],
+    "touchCount": 2,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 108,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "1024",
+    "page": "jds",
+    "path": "/jds",
+    "vw": 1024,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "分析岗位",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 212,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 812,
+    "wrapWidth": 764,
+    "tooSmall": [],
+    "touchCount": 2,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 722,
+      "h": 160,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "1024",
+    "page": "resumes",
+    "path": "/resumes",
+    "vw": 1024,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "我的简历",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 212,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 812,
+    "wrapWidth": 764,
+    "tooSmall": [],
+    "touchCount": 3,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 722,
+      "h": 160,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "1024",
+    "page": "applications",
+    "path": "/applications",
+    "vw": 1024,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "我的求职",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 212,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 812,
+    "wrapWidth": 764,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": {
+      "w": 150,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "1024",
+    "page": "goals",
+    "path": "/goals",
+    "vw": 1024,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "求职目标",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 212,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 812,
+    "wrapWidth": 764,
+    "tooSmall": [],
+    "touchCount": 3,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 722,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "1024",
+    "page": "match",
+    "path": "/match",
+    "vw": 1024,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "简历 × 岗位对照",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 212,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 812,
+    "wrapWidth": 764,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 304,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "1024",
+    "page": "learn",
+    "path": "/learn",
+    "vw": 1024,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "学习提升",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 212,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 812,
+    "wrapWidth": 764,
+    "tooSmall": [],
+    "touchCount": 2,
+    "cardRadius": null,
+    "btnPrimary": {
+      "w": 220,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "1024",
+    "page": "projects",
+    "path": "/projects",
+    "vw": 1024,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "制作项目",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 212,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 812,
+    "wrapWidth": 764,
+    "tooSmall": [],
+    "touchCount": 3,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 220,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "1024",
+    "page": "portfolio",
+    "path": "/portfolio",
+    "vw": 1024,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "作品集",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 212,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 812,
+    "wrapWidth": 764,
+    "tooSmall": [],
+    "touchCount": 2,
+    "cardRadius": null,
+    "btnPrimary": {
+      "w": 156,
+      "h": 32,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "13px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "1024",
+    "page": "interview",
+    "path": "/interview",
+    "vw": 1024,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "模拟面试",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 212,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 812,
+    "wrapWidth": 764,
+    "tooSmall": [],
+    "touchCount": 2,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "1024",
+    "page": "agent",
+    "path": "/agent",
+    "vw": 1024,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "AI 求职助手",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 212,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 812,
+    "wrapWidth": 764,
+    "tooSmall": [],
+    "touchCount": 3,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 112,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": {
+      "w": 722,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "1024",
+    "page": "action-plans",
+    "path": "/action-plans",
+    "vw": 1024,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "岗位行动计划",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 212,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 812,
+    "wrapWidth": 764,
+    "tooSmall": [],
+    "touchCount": 2,
+    "cardRadius": null,
+    "btnPrimary": {
+      "w": 122,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "1280",
+    "page": "login",
+    "path": "/login",
+    "vw": 1280,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": null,
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1036,
+    "wrapWidth": 956,
+    "tooSmall": [],
+    "touchCount": 2,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 108,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "1280",
+    "page": "register",
+    "path": "/register",
+    "vw": 1280,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": null,
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1036,
+    "wrapWidth": 956,
+    "tooSmall": [],
+    "touchCount": 2,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 108,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "1280",
+    "page": "home",
+    "path": "/",
+    "vw": 1280,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": null,
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1036,
+    "wrapWidth": 956,
+    "tooSmall": [],
+    "touchCount": 2,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 108,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "1280",
+    "page": "jds",
+    "path": "/jds",
+    "vw": 1280,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "分析岗位",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1036,
+    "wrapWidth": 956,
+    "tooSmall": [],
+    "touchCount": 2,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 914,
+      "h": 160,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "1280",
+    "page": "resumes",
+    "path": "/resumes",
+    "vw": 1280,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "我的简历",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1036,
+    "wrapWidth": 956,
+    "tooSmall": [],
+    "touchCount": 3,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 914,
+      "h": 160,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "1280",
+    "page": "applications",
+    "path": "/applications",
+    "vw": 1280,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "我的求职",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1036,
+    "wrapWidth": 956,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": {
+      "w": 150,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "1280",
+    "page": "goals",
+    "path": "/goals",
+    "vw": 1280,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "求职目标",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1036,
+    "wrapWidth": 956,
+    "tooSmall": [],
+    "touchCount": 3,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 914,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "1280",
+    "page": "match",
+    "path": "/match",
+    "vw": 1280,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "简历 × 岗位对照",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1036,
+    "wrapWidth": 956,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 400,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "1280",
+    "page": "learn",
+    "path": "/learn",
+    "vw": 1280,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "学习提升",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1036,
+    "wrapWidth": 956,
+    "tooSmall": [],
+    "touchCount": 2,
+    "cardRadius": null,
+    "btnPrimary": {
+      "w": 220,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "1280",
+    "page": "projects",
+    "path": "/projects",
+    "vw": 1280,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "制作项目",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1036,
+    "wrapWidth": 956,
+    "tooSmall": [],
+    "touchCount": 3,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 220,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "1280",
+    "page": "portfolio",
+    "path": "/portfolio",
+    "vw": 1280,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "作品集",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1036,
+    "wrapWidth": 956,
+    "tooSmall": [],
+    "touchCount": 2,
+    "cardRadius": null,
+    "btnPrimary": {
+      "w": 156,
+      "h": 32,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "13px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "1280",
+    "page": "interview",
+    "path": "/interview",
+    "vw": 1280,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "模拟面试",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1036,
+    "wrapWidth": 956,
+    "tooSmall": [],
+    "touchCount": 2,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "1280",
+    "page": "agent",
+    "path": "/agent",
+    "vw": 1280,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "AI 求职助手",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1036,
+    "wrapWidth": 956,
+    "tooSmall": [],
+    "touchCount": 3,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 112,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": {
+      "w": 914,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "1280",
+    "page": "action-plans",
+    "path": "/action-plans",
+    "vw": 1280,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "岗位行动计划",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1036,
+    "wrapWidth": 956,
+    "tooSmall": [],
+    "touchCount": 2,
+    "cardRadius": null,
+    "btnPrimary": {
+      "w": 122,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "1536",
+    "page": "login",
+    "path": "/login",
+    "vw": 1536,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": null,
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1292,
+    "wrapWidth": 1180,
+    "tooSmall": [],
+    "touchCount": 2,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 108,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "1536",
+    "page": "register",
+    "path": "/register",
+    "vw": 1536,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": null,
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1292,
+    "wrapWidth": 1180,
+    "tooSmall": [],
+    "touchCount": 2,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 108,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "1536",
+    "page": "home",
+    "path": "/",
+    "vw": 1536,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": null,
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1292,
+    "wrapWidth": 1180,
+    "tooSmall": [],
+    "touchCount": 2,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 108,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "1536",
+    "page": "jds",
+    "path": "/jds",
+    "vw": 1536,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "分析岗位",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1292,
+    "wrapWidth": 1180,
+    "tooSmall": [],
+    "touchCount": 2,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 1138,
+      "h": 160,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "1536",
+    "page": "resumes",
+    "path": "/resumes",
+    "vw": 1536,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "我的简历",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1292,
+    "wrapWidth": 1180,
+    "tooSmall": [],
+    "touchCount": 3,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 1138,
+      "h": 160,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "1536",
+    "page": "applications",
+    "path": "/applications",
+    "vw": 1536,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "我的求职",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1292,
+    "wrapWidth": 1180,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": {
+      "w": 150,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "1536",
+    "page": "goals",
+    "path": "/goals",
+    "vw": 1536,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "求职目标",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1292,
+    "wrapWidth": 1180,
+    "tooSmall": [],
+    "touchCount": 3,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 1138,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "1536",
+    "page": "match",
+    "path": "/match",
+    "vw": 1536,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "简历 × 岗位对照",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1292,
+    "wrapWidth": 1180,
+    "tooSmall": [],
+    "touchCount": 4,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "0.5"
+    },
+    "input": {
+      "w": 512,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "1536",
+    "page": "learn",
+    "path": "/learn",
+    "vw": 1536,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "学习提升",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1292,
+    "wrapWidth": 1180,
+    "tooSmall": [],
+    "touchCount": 2,
+    "cardRadius": null,
+    "btnPrimary": {
+      "w": 220,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "1536",
+    "page": "projects",
+    "path": "/projects",
+    "vw": 1536,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "制作项目",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1292,
+    "wrapWidth": 1180,
+    "tooSmall": [],
+    "touchCount": 3,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 220,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "1536",
+    "page": "portfolio",
+    "path": "/portfolio",
+    "vw": 1536,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "作品集",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1292,
+    "wrapWidth": 1180,
+    "tooSmall": [],
+    "touchCount": 2,
+    "cardRadius": null,
+    "btnPrimary": {
+      "w": 156,
+      "h": 32,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "13px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "1536",
+    "page": "interview",
+    "path": "/interview",
+    "vw": 1536,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "模拟面试",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1292,
+    "wrapWidth": 1180,
+    "tooSmall": [],
+    "touchCount": 2,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 90,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  },
+  {
+    "viewport": "1536",
+    "page": "agent",
+    "path": "/agent",
+    "vw": 1536,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "AI 求职助手",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1292,
+    "wrapWidth": 1180,
+    "tooSmall": [],
+    "touchCount": 3,
+    "cardRadius": "10px",
+    "btnPrimary": {
+      "w": 112,
+      "h": 40,
+      "display": "inline-flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": {
+      "w": 1138,
+      "h": 41,
+      "display": "block",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "theme": "light"
+  },
+  {
+    "viewport": "1536",
+    "page": "action-plans",
+    "path": "/action-plans",
+    "vw": 1536,
+    "overflowPx": 0,
+    "offenders": [],
+    "offenderCount": 0,
+    "h1": {
+      "text": "岗位行动计划",
+      "fontSize": "28px",
+      "fontWeight": "700"
+    },
+    "bodyFont": "14px",
+    "sidenav": {
+      "position": "sticky",
+      "width": 244,
+      "left": 0,
+      "transform": "none"
+    },
+    "topbarDisplay": "none",
+    "mainWidth": 1292,
+    "wrapWidth": 1180,
+    "tooSmall": [],
+    "touchCount": 2,
+    "cardRadius": null,
+    "btnPrimary": {
+      "w": 122,
+      "h": 40,
+      "display": "flex",
+      "position": "static",
+      "transform": "none",
+      "fontSize": "14px",
+      "borderRadius": "8px",
+      "opacity": "1"
+    },
+    "input": null,
+    "theme": "light"
+  }
+]

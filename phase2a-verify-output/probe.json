@@ -1,0 +1,586 @@
+{
+  "viewports": [
+    {
+      "vp": "320",
+      "light": {
+        "path": "/",
+        "vw": 320,
+        "overflowX": 0,
+        "offenderCount": 0,
+        "offenders": [],
+        "hasH1": false,
+        "h1Text": null,
+        "hasTaskCard": false,
+        "taskTitle": null,
+        "ctaText": null,
+        "ctaHeight": null,
+        "ctaWidth": null,
+        "flowCount": 0,
+        "flowItems": [],
+        "recentCount": 0,
+        "recentRows": [],
+        "smallTargetCount": 3,
+        "smallTargets": [
+          {
+            "cls": "btn btn-ghost btn-icon",
+            "h": 40
+          },
+          {
+            "cls": "btn btn-ghost btn-icon sidenav-close",
+            "h": 40
+          },
+          {
+            "cls": "btn-ghost personal-center-trigger",
+            "h": 40
+          }
+        ],
+        "sidenavPosition": "fixed",
+        "bgApp": "#f4f6f9"
+      },
+      "dark": {
+        "overflowX": 0,
+        "bgApp": "#f4f6f9",
+        "textPrimary": "#14171d",
+        "bodyColor": "rgb(20, 23, 29)",
+        "bodyBg": "rgb(244, 246, 249)"
+      }
+    },
+    {
+      "vp": "375",
+      "light": {
+        "path": "/",
+        "vw": 375,
+        "overflowX": 0,
+        "offenderCount": 0,
+        "offenders": [],
+        "hasH1": true,
+        "h1Text": "工作台",
+        "hasTaskCard": true,
+        "taskTitle": "上传并确认第一份简历",
+        "ctaText": "上传简历",
+        "ctaHeight": 44,
+        "ctaWidth": 199,
+        "flowCount": 6,
+        "flowItems": [
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "简历未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "岗位 JD未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "匹配分析未开始",
+            "state": "未开始",
+            "detail": "尚未进行匹配分析"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "修改建议未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "行动计划未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "投递未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          }
+        ],
+        "recentCount": 0,
+        "recentRows": [],
+        "smallTargetCount": 5,
+        "smallTargets": [
+          {
+            "cls": "btn btn-ghost btn-icon",
+            "h": 40
+          },
+          {
+            "cls": "btn btn-ghost btn-icon sidenav-close",
+            "h": 40
+          },
+          {
+            "cls": "btn-ghost personal-center-trigger",
+            "h": 40
+          },
+          {
+            "cls": "btn btn-secondary",
+            "h": 40
+          },
+          {
+            "cls": "btn btn-secondary",
+            "h": 40
+          }
+        ],
+        "sidenavPosition": "fixed",
+        "bgApp": "#f4f6f9"
+      },
+      "dark": {
+        "overflowX": 0,
+        "bgApp": "#f4f6f9",
+        "textPrimary": "#14171d",
+        "bodyColor": "rgb(20, 23, 29)",
+        "bodyBg": "rgb(244, 246, 249)"
+      }
+    },
+    {
+      "vp": "640",
+      "light": {
+        "path": "/",
+        "vw": 640,
+        "overflowX": 0,
+        "offenderCount": 0,
+        "offenders": [],
+        "hasH1": true,
+        "h1Text": "工作台",
+        "hasTaskCard": true,
+        "taskTitle": "上传并确认第一份简历",
+        "ctaText": "上传简历",
+        "ctaHeight": 44,
+        "ctaWidth": 464,
+        "flowCount": 6,
+        "flowItems": [
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "简历未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "岗位 JD未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "匹配分析未开始",
+            "state": "未开始",
+            "detail": "尚未进行匹配分析"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "修改建议未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "行动计划未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "投递未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          }
+        ],
+        "recentCount": 0,
+        "recentRows": [],
+        "smallTargetCount": 5,
+        "smallTargets": [
+          {
+            "cls": "btn btn-ghost btn-icon",
+            "h": 40
+          },
+          {
+            "cls": "btn btn-ghost btn-icon sidenav-close",
+            "h": 40
+          },
+          {
+            "cls": "btn-ghost personal-center-trigger",
+            "h": 40
+          },
+          {
+            "cls": "btn btn-secondary",
+            "h": 40
+          },
+          {
+            "cls": "btn btn-secondary",
+            "h": 40
+          }
+        ],
+        "sidenavPosition": "fixed",
+        "bgApp": "#f4f6f9"
+      },
+      "dark": {
+        "overflowX": 0,
+        "bgApp": "#f4f6f9",
+        "textPrimary": "#14171d",
+        "bodyColor": "rgb(20, 23, 29)",
+        "bodyBg": "rgb(244, 246, 249)"
+      }
+    },
+    {
+      "vp": "768",
+      "light": {
+        "path": "/",
+        "vw": 753,
+        "overflowX": 0,
+        "offenderCount": 0,
+        "offenders": [],
+        "hasH1": true,
+        "h1Text": "工作台",
+        "hasTaskCard": true,
+        "taskTitle": "上传并确认第一份简历",
+        "ctaText": "上传简历",
+        "ctaHeight": 44,
+        "ctaWidth": 114,
+        "flowCount": 6,
+        "flowItems": [
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "简历未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "岗位 JD未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "匹配分析未开始",
+            "state": "未开始",
+            "detail": "尚未进行匹配分析"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "修改建议未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "行动计划未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "投递未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          }
+        ],
+        "recentCount": 0,
+        "recentRows": [],
+        "smallTargetCount": 5,
+        "smallTargets": [
+          {
+            "cls": "btn btn-ghost btn-icon",
+            "h": 40
+          },
+          {
+            "cls": "btn btn-ghost btn-icon sidenav-close",
+            "h": 40
+          },
+          {
+            "cls": "btn-ghost personal-center-trigger",
+            "h": 40
+          },
+          {
+            "cls": "btn btn-secondary",
+            "h": 40
+          },
+          {
+            "cls": "btn btn-secondary",
+            "h": 40
+          }
+        ],
+        "sidenavPosition": "fixed",
+        "bgApp": "#f4f6f9"
+      },
+      "dark": {
+        "overflowX": 0,
+        "bgApp": "#f4f6f9",
+        "textPrimary": "#14171d",
+        "bodyColor": "rgb(20, 23, 29)",
+        "bodyBg": "rgb(244, 246, 249)"
+      }
+    },
+    {
+      "vp": "1024",
+      "light": {
+        "path": "/",
+        "vw": 1009,
+        "overflowX": 0,
+        "offenderCount": 0,
+        "offenders": [],
+        "hasH1": true,
+        "h1Text": "工作台",
+        "hasTaskCard": true,
+        "taskTitle": "上传并确认第一份简历",
+        "ctaText": "上传简历",
+        "ctaHeight": 44,
+        "ctaWidth": 114,
+        "flowCount": 6,
+        "flowItems": [
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "简历未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "岗位 JD未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "匹配分析未开始",
+            "state": "未开始",
+            "detail": "尚未进行匹配分析"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "修改建议未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "行动计划未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "投递未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          }
+        ],
+        "recentCount": 0,
+        "recentRows": [],
+        "smallTargetCount": 3,
+        "smallTargets": [
+          {
+            "cls": "btn-ghost personal-center-trigger",
+            "h": 40
+          },
+          {
+            "cls": "btn btn-secondary",
+            "h": 40
+          },
+          {
+            "cls": "btn btn-secondary",
+            "h": 40
+          }
+        ],
+        "sidenavPosition": "sticky",
+        "bgApp": "#f4f6f9"
+      },
+      "dark": {
+        "overflowX": 0,
+        "bgApp": "#f4f6f9",
+        "textPrimary": "#14171d",
+        "bodyColor": "rgb(20, 23, 29)",
+        "bodyBg": "rgb(244, 246, 249)"
+      }
+    },
+    {
+      "vp": "1280",
+      "light": {
+        "path": "/",
+        "vw": 1265,
+        "overflowX": 0,
+        "offenderCount": 0,
+        "offenders": [],
+        "hasH1": true,
+        "h1Text": "工作台",
+        "hasTaskCard": true,
+        "taskTitle": "上传并确认第一份简历",
+        "ctaText": "上传简历",
+        "ctaHeight": 44,
+        "ctaWidth": 114,
+        "flowCount": 6,
+        "flowItems": [
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "简历未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "岗位 JD未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "匹配分析未开始",
+            "state": "未开始",
+            "detail": "尚未进行匹配分析"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "修改建议未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "行动计划未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "投递未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          }
+        ],
+        "recentCount": 0,
+        "recentRows": [],
+        "smallTargetCount": 3,
+        "smallTargets": [
+          {
+            "cls": "btn-ghost personal-center-trigger",
+            "h": 40
+          },
+          {
+            "cls": "btn btn-secondary",
+            "h": 40
+          },
+          {
+            "cls": "btn btn-secondary",
+            "h": 40
+          }
+        ],
+        "sidenavPosition": "sticky",
+        "bgApp": "#f4f6f9"
+      },
+      "dark": {
+        "overflowX": 0,
+        "bgApp": "#f4f6f9",
+        "textPrimary": "#14171d",
+        "bodyColor": "rgb(20, 23, 29)",
+        "bodyBg": "rgb(244, 246, 249)"
+      }
+    },
+    {
+      "vp": "1536",
+      "light": {
+        "path": "/",
+        "vw": 1521,
+        "overflowX": 0,
+        "offenderCount": 0,
+        "offenders": [],
+        "hasH1": true,
+        "h1Text": "工作台",
+        "hasTaskCard": true,
+        "taskTitle": "上传并确认第一份简历",
+        "ctaText": "上传简历",
+        "ctaHeight": 44,
+        "ctaWidth": 114,
+        "flowCount": 6,
+        "flowItems": [
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "简历未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "岗位 JD未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "匹配分析未开始",
+            "state": "未开始",
+            "detail": "尚未进行匹配分析"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "修改建议未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "行动计划未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "wb-flow-item is-todo",
+            "label": "投递未开始",
+            "state": "未开始",
+            "detail": "尚未开始"
+          }
+        ],
+        "recentCount": 0,
+        "recentRows": [],
+        "smallTargetCount": 3,
+        "smallTargets": [
+          {
+            "cls": "btn-ghost personal-center-trigger",
+            "h": 40
+          },
+          {
+            "cls": "btn btn-secondary",
+            "h": 40
+          },
+          {
+            "cls": "btn btn-secondary",
+            "h": 40
+          }
+        ],
+        "sidenavPosition": "sticky",
+        "bgApp": "#f4f6f9"
+      },
+      "dark": {
+        "overflowX": 0,
+        "bgApp": "#f4f6f9",
+        "textPrimary": "#14171d",
+        "bodyColor": "rgb(20, 23, 29)",
+        "bodyBg": "rgb(244, 246, 249)"
+      }
+    }
+  ],
+  "empty": {
+    "userId": "cmu9vvein0062iabwosxsgwq6",
+    "hasTaskCard": true,
+    "taskTitle": "上传并确认第一份简历",
+    "ctaText": "上传简历",
+    "flowCount": 6,
+    "flowStates": [
+      "is-todo",
+      "is-todo",
+      "is-todo",
+      "is-todo",
+      "is-todo",
+      "is-todo"
+    ],
+    "recentCount": 0,
+    "hasRecentEmpty": true,
+    "recentEmptyTitle": "还没有可继续的内容",
+    "overviewEmptyText": "还没有投递记录，去 记录第一次投递。",
+    "noticeText": "尚未设置当前求职目标",
+    "overflowX": 0
+  }
+}

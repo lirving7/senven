@@ -1,0 +1,56 @@
+{
+  "$comment": "T5-A RAG-Lite 受控语料（v1）。仅公共/受控知识：官方文档 / 求职指南 / 策展参考。严禁包含任何用户私有数据（Resume/JD/Interview/ProjectResult/Capability/Portfolio/ActionPlan/LearningTask 等）。",
+  "version": "rag-corpus/v1",
+  "sources": [
+    {
+      "key": "jobpilot-product-guide",
+      "title": "JobPilot 产品指南",
+      "sourceType": "OFFICIAL_DOC",
+      "description": "JobPilot 官方产品能力说明（公共）",
+      "origin": "JobPilot 项目文档",
+      "uri": "https://example.invalid/jobpilot/guide",
+      "license": "CC-BY-4.0",
+      "version": "v1"
+    },
+    {
+      "key": "interview-preparation-guide",
+      "title": "面试准备指南",
+      "sourceType": "JOB_GUIDE",
+      "description": "求职面试准备的一般性指引（公共）",
+      "origin": "公开求职方法学整理",
+      "uri": "https://example.invalid/interview/prep",
+      "license": "CC-BY-4.0",
+      "version": "v1"
+    },
+    {
+      "key": "career-development-reference",
+      "title": "职业发展参考资料",
+      "sourceType": "CURATED_REFERENCE",
+      "description": "能力画像与学习任务的策展参考（公共）",
+      "origin": "人工策展参考",
+      "uri": "https://example.invalid/career/reference",
+      "license": "CC-BY-4.0",
+      "version": "v1"
+    }
+  ],
+  "documents": [
+    {
+      "sourceKey": "jobpilot-product-guide",
+      "title": "JobPilot 核心能力概览",
+      "language": "zh",
+      "content": "JobPilot 是一个 AI 求职工作台，围绕简历与岗位描述构建候选人的能力事实层。\n\n核心能力包括简历解析、岗位描述解析、能力画像、岗位匹配、行动计划、学习任务、作品集与模拟面试。\n\n模拟面试会基于岗位描述生成问题，并记录每一轮的问答与反馈。"
+    },
+    {
+      "sourceKey": "interview-preparation-guide",
+      "title": "模拟面试准备方法",
+      "language": "zh",
+      "content": "模拟面试的准备分为三步。\n\n第一步是梳理简历中的事实，确保每一段经历都有可核验的证据。\n\n第二步是围绕目标岗位描述，逐条对照能力缺口，形成行动计划。\n\n第三步是进行多轮模拟面试，把每一次回答的反馈记录下来，持续改进表达。"
+    },
+    {
+      "sourceKey": "career-development-reference",
+      "title": "能力画像与学习任务",
+      "language": "zh",
+      "content": "能力画像用于描述候选人当前具备的能力与证据强度。\n\n学习任务用于把能力缺口转化为可执行的学习过程，并记录学习进展。\n\n作品集用于沉淀项目成果，形成对外展示的材料。"
+    }
+  ]
+}

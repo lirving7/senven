@@ -1,0 +1,32 @@
+{
+  "name": "jobpilot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "node --experimental-strip-types --test tests/verify.test.ts tests/llm-contract.test.ts tests/jd-parse.test.ts tests/auth.test.ts tests/api-jds.test.ts tests/api-resumes-read.test.ts tests/api-capabilities.test.ts tests/t2-usage-quota.test.ts tests/ai-contract.test.ts tests/match-domain.test.ts tests/api-matches.test.ts tests/suggestions.test.ts tests/pdf.test.ts tests/applications.test.ts tests/e2e-postgres.test.ts tests/qa-probe.test.ts tests/qa-bug001-regression.test.ts tests/resume-safety.test.ts tests/t2-e2e.test.ts tests/t2-confirm.test.ts tests/qa-t2-acceptance.test.ts tests/t2-action-plan-api.test.ts tests/qa-t2-action-plan-acceptance.test.ts tests/t2t3-c1-capability-projection.test.ts tests/t2t3-c2-confirm-projection.test.ts tests/t2t3-c3-action-plan-reconcile.test.ts tests/t2t3-c4-step-entry.test.ts tests/qa-t2t3-bridge-acceptance.test.ts tests/project-result-domain.test.ts tests/project-result-repository.test.ts tests/project-result-api.test.ts tests/project-result-return-domain.test.ts tests/project-result-return-repo.test.ts tests/project-result-return-api.test.ts tests/project-result-return-concurrency.test.ts tests/project-ai-analysis-domain.test.ts tests/project-ai-analysis-api.test.ts tests/capability-key-contract.test.ts tests/project-result-key-contract.test.ts tests/project-result-step-entry.test.ts tests/action-plan-step-type-contract.test.ts tests/action-plan-regenerate-dangling-step.test.ts tests/learning-task-domain.test.ts tests/learning-task-api.test.ts tests/learning-task-isolation.test.ts tests/portfolio-api.test.ts tests/interview-api.test.ts tests/interview-isolation.test.ts tests/c1-client-extras.test.ts tests/rag-tokenizer-chunker.test.ts tests/rag-retrieval-domain.test.ts tests/rag-isolation.test.ts tests/agent-domain.test.ts tests/agent-repository.test.ts tests/agent-guards.test.ts tests/agent-tool-catalog.test.ts tests/agent-tool-adapters.test.ts tests/agent-tool-guards.test.ts tests/agent-quota.test.ts tests/agent-plan-contract.test.ts tests/agent-runtime.test.ts tests/agent-api.test.ts tests/agent-injection.test.ts tests/agent-act.test.ts tests/agent-act-ui.test.ts tests/agent-ui.test.ts tests/career-goal-domain.test.ts tests/career-goal-api.test.ts tests/application-t62.test.ts tests/dashboard-t63.test.ts tests/project-guide.test.ts tests/portfolio-view.test.ts tests/interview-ui.test.ts tests/avatar-upload.test.ts tests/llm-key-crypto.test.ts tests/api-auth-llm-secret.test.ts tests/user-provider-resolution.test.ts",
+    "test:auth-jd": "node --experimental-strip-types --test tests/auth.test.ts tests/api-jds.test.ts",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev --name init"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.1.0",
+    "@react-pdf/renderer": "^4.9.0",
+    "fflate": "^0.8.3",
+    "next": "^15.1.0",
+    "pdf-parse": "^2.4.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "prisma": "^6.1.0",
+    "typescript": "^5.7.2"
+  }
+}

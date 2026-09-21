@@ -1,0 +1,744 @@
+{
+  "viewports": [
+    {
+      "vp": "320",
+      "light": {
+        "vw": 320,
+        "overflowX": 0,
+        "offenderCount": 0,
+        "offenders": [],
+        "hasH1": true,
+        "h1": "工作台",
+        "taskTitle": "把简历与岗位做一次对照",
+        "taskDesc": "逐条比对已确认经历与岗位要求，得到覆盖情况与缺口清单。",
+        "ctaText": "开始对照",
+        "ctaH": 44,
+        "ctaW": 152,
+        "flowCount": 6,
+        "flow": [
+          {
+            "cls": "is-progress",
+            "label": "简历进行中",
+            "detail": "已添加 1 份"
+          },
+          {
+            "cls": "is-progress",
+            "label": "岗位 JD进行中",
+            "detail": "已分析 3 个"
+          },
+          {
+            "cls": "is-todo",
+            "label": "匹配分析未开始",
+            "detail": "尚未进行匹配分析"
+          },
+          {
+            "cls": "is-todo",
+            "label": "修改建议未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "is-progress",
+            "label": "行动计划进行中",
+            "detail": "已生成 1 份"
+          },
+          {
+            "cls": "is-todo",
+            "label": "投递未开始",
+            "detail": "尚未开始"
+          }
+        ],
+        "recentCount": 3,
+        "recent": [
+          {
+            "kind": "简历",
+            "title": "PDF",
+            "href": "/resumes/cmu9g8dyt0004ia6cxgfmg58j"
+          },
+          {
+            "kind": "岗位",
+            "title": "AI Native开发实习生",
+            "href": "/jds?jdId=cmu9q7oy00001iaogkq786kgd"
+          },
+          {
+            "kind": "行动计划",
+            "title": "能力提升计划",
+            "href": "/action-plans/cmu9gbolr0049ia6ct7dcxitn"
+          }
+        ],
+        "hasRecentEmpty": false,
+        "recentEmptyTitle": null,
+        "ovCards": 3,
+        "ovEmptyCount": 2,
+        "smallTargetCount": 1,
+        "smallTargets": [
+          {
+            "cls": "btn-ghost personal-center-trigger",
+            "h": 40,
+            "txt": "74个人中心"
+          }
+        ],
+        "sidenavPos": "fixed",
+        "tokenBgApp": "#f4f6f9",
+        "tokenTextPrimary": "#14171d",
+        "bodyBg": "rgb(244, 246, 249)",
+        "bodyColor": "rgb(20, 23, 29)",
+        "themeAttr": "light"
+      },
+      "dark": {
+        "overflowX": 0,
+        "themeAttr": "dark",
+        "tokenBgApp": "#0d0f13",
+        "tokenTextPrimary": "#e9ecf1",
+        "bodyBg": "rgb(13, 15, 19)",
+        "bodyColor": "rgb(233, 236, 241)",
+        "flowCount": 6,
+        "taskVisible": true
+      }
+    },
+    {
+      "vp": "375",
+      "light": {
+        "vw": 375,
+        "overflowX": 0,
+        "offenderCount": 0,
+        "offenders": [],
+        "hasH1": true,
+        "h1": "工作台",
+        "taskTitle": "把简历与岗位做一次对照",
+        "taskDesc": "逐条比对已确认经历与岗位要求，得到覆盖情况与缺口清单。",
+        "ctaText": "开始对照",
+        "ctaH": 44,
+        "ctaW": 199,
+        "flowCount": 6,
+        "flow": [
+          {
+            "cls": "is-progress",
+            "label": "简历进行中",
+            "detail": "已添加 1 份"
+          },
+          {
+            "cls": "is-progress",
+            "label": "岗位 JD进行中",
+            "detail": "已分析 3 个"
+          },
+          {
+            "cls": "is-todo",
+            "label": "匹配分析未开始",
+            "detail": "尚未进行匹配分析"
+          },
+          {
+            "cls": "is-todo",
+            "label": "修改建议未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "is-progress",
+            "label": "行动计划进行中",
+            "detail": "已生成 1 份"
+          },
+          {
+            "cls": "is-todo",
+            "label": "投递未开始",
+            "detail": "尚未开始"
+          }
+        ],
+        "recentCount": 3,
+        "recent": [
+          {
+            "kind": "简历",
+            "title": "PDF",
+            "href": "/resumes/cmu9g8dyt0004ia6cxgfmg58j"
+          },
+          {
+            "kind": "岗位",
+            "title": "AI Native开发实习生",
+            "href": "/jds?jdId=cmu9q7oy00001iaogkq786kgd"
+          },
+          {
+            "kind": "行动计划",
+            "title": "能力提升计划",
+            "href": "/action-plans/cmu9gbolr0049ia6ct7dcxitn"
+          }
+        ],
+        "hasRecentEmpty": false,
+        "recentEmptyTitle": null,
+        "ovCards": 3,
+        "ovEmptyCount": 2,
+        "smallTargetCount": 1,
+        "smallTargets": [
+          {
+            "cls": "btn-ghost personal-center-trigger",
+            "h": 40,
+            "txt": "74个人中心"
+          }
+        ],
+        "sidenavPos": "fixed",
+        "tokenBgApp": "#f4f6f9",
+        "tokenTextPrimary": "#14171d",
+        "bodyBg": "rgb(244, 246, 249)",
+        "bodyColor": "rgb(20, 23, 29)",
+        "themeAttr": "light"
+      },
+      "dark": {
+        "overflowX": 0,
+        "themeAttr": "dark",
+        "tokenBgApp": "#0d0f13",
+        "tokenTextPrimary": "#e9ecf1",
+        "bodyBg": "rgb(13, 15, 19)",
+        "bodyColor": "rgb(233, 236, 241)",
+        "flowCount": 6,
+        "taskVisible": true
+      }
+    },
+    {
+      "vp": "640",
+      "light": {
+        "vw": 640,
+        "overflowX": 0,
+        "offenderCount": 0,
+        "offenders": [],
+        "hasH1": true,
+        "h1": "工作台",
+        "taskTitle": "把简历与岗位做一次对照",
+        "taskDesc": "逐条比对已确认经历与岗位要求，得到覆盖情况与缺口清单。",
+        "ctaText": "开始对照",
+        "ctaH": 44,
+        "ctaW": 464,
+        "flowCount": 6,
+        "flow": [
+          {
+            "cls": "is-progress",
+            "label": "简历进行中",
+            "detail": "已添加 1 份"
+          },
+          {
+            "cls": "is-progress",
+            "label": "岗位 JD进行中",
+            "detail": "已分析 3 个"
+          },
+          {
+            "cls": "is-todo",
+            "label": "匹配分析未开始",
+            "detail": "尚未进行匹配分析"
+          },
+          {
+            "cls": "is-todo",
+            "label": "修改建议未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "is-progress",
+            "label": "行动计划进行中",
+            "detail": "已生成 1 份"
+          },
+          {
+            "cls": "is-todo",
+            "label": "投递未开始",
+            "detail": "尚未开始"
+          }
+        ],
+        "recentCount": 3,
+        "recent": [
+          {
+            "kind": "简历",
+            "title": "PDF",
+            "href": "/resumes/cmu9g8dyt0004ia6cxgfmg58j"
+          },
+          {
+            "kind": "岗位",
+            "title": "AI Native开发实习生",
+            "href": "/jds?jdId=cmu9q7oy00001iaogkq786kgd"
+          },
+          {
+            "kind": "行动计划",
+            "title": "能力提升计划",
+            "href": "/action-plans/cmu9gbolr0049ia6ct7dcxitn"
+          }
+        ],
+        "hasRecentEmpty": false,
+        "recentEmptyTitle": null,
+        "ovCards": 3,
+        "ovEmptyCount": 2,
+        "smallTargetCount": 1,
+        "smallTargets": [
+          {
+            "cls": "btn-ghost personal-center-trigger",
+            "h": 40,
+            "txt": "74个人中心"
+          }
+        ],
+        "sidenavPos": "fixed",
+        "tokenBgApp": "#f4f6f9",
+        "tokenTextPrimary": "#14171d",
+        "bodyBg": "rgb(244, 246, 249)",
+        "bodyColor": "rgb(20, 23, 29)",
+        "themeAttr": "light"
+      },
+      "dark": {
+        "overflowX": 0,
+        "themeAttr": "dark",
+        "tokenBgApp": "#0d0f13",
+        "tokenTextPrimary": "#e9ecf1",
+        "bodyBg": "rgb(13, 15, 19)",
+        "bodyColor": "rgb(233, 236, 241)",
+        "flowCount": 6,
+        "taskVisible": true
+      }
+    },
+    {
+      "vp": "768",
+      "light": {
+        "vw": 753,
+        "overflowX": 0,
+        "offenderCount": 0,
+        "offenders": [],
+        "hasH1": true,
+        "h1": "工作台",
+        "taskTitle": "把简历与岗位做一次对照",
+        "taskDesc": "逐条比对已确认经历与岗位要求，得到覆盖情况与缺口清单。",
+        "ctaText": "开始对照",
+        "ctaH": 44,
+        "ctaW": 114,
+        "flowCount": 6,
+        "flow": [
+          {
+            "cls": "is-progress",
+            "label": "简历进行中",
+            "detail": "已添加 1 份"
+          },
+          {
+            "cls": "is-progress",
+            "label": "岗位 JD进行中",
+            "detail": "已分析 3 个"
+          },
+          {
+            "cls": "is-todo",
+            "label": "匹配分析未开始",
+            "detail": "尚未进行匹配分析"
+          },
+          {
+            "cls": "is-todo",
+            "label": "修改建议未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "is-progress",
+            "label": "行动计划进行中",
+            "detail": "已生成 1 份"
+          },
+          {
+            "cls": "is-todo",
+            "label": "投递未开始",
+            "detail": "尚未开始"
+          }
+        ],
+        "recentCount": 3,
+        "recent": [
+          {
+            "kind": "简历",
+            "title": "PDF",
+            "href": "/resumes/cmu9g8dyt0004ia6cxgfmg58j"
+          },
+          {
+            "kind": "岗位",
+            "title": "AI Native开发实习生",
+            "href": "/jds?jdId=cmu9q7oy00001iaogkq786kgd"
+          },
+          {
+            "kind": "行动计划",
+            "title": "能力提升计划",
+            "href": "/action-plans/cmu9gbolr0049ia6ct7dcxitn"
+          }
+        ],
+        "hasRecentEmpty": false,
+        "recentEmptyTitle": null,
+        "ovCards": 3,
+        "ovEmptyCount": 2,
+        "smallTargetCount": 4,
+        "smallTargets": [
+          {
+            "cls": "btn btn-ghost btn-icon",
+            "h": 40,
+            "txt": ""
+          },
+          {
+            "cls": "btn btn-ghost btn-icon sidenav-close",
+            "h": 40,
+            "txt": ""
+          },
+          {
+            "cls": "btn-ghost personal-center-trigger",
+            "h": 40,
+            "txt": "74个人中心"
+          },
+          {
+            "cls": "btn btn-secondary",
+            "h": 40,
+            "txt": "设置目标"
+          }
+        ],
+        "sidenavPos": "fixed",
+        "tokenBgApp": "#f4f6f9",
+        "tokenTextPrimary": "#14171d",
+        "bodyBg": "rgb(244, 246, 249)",
+        "bodyColor": "rgb(20, 23, 29)",
+        "themeAttr": "light"
+      },
+      "dark": {
+        "overflowX": 0,
+        "themeAttr": "dark",
+        "tokenBgApp": "#0d0f13",
+        "tokenTextPrimary": "#e9ecf1",
+        "bodyBg": "rgb(13, 15, 19)",
+        "bodyColor": "rgb(233, 236, 241)",
+        "flowCount": 6,
+        "taskVisible": true
+      }
+    },
+    {
+      "vp": "1024",
+      "light": {
+        "vw": 1009,
+        "overflowX": 0,
+        "offenderCount": 0,
+        "offenders": [],
+        "hasH1": true,
+        "h1": "工作台",
+        "taskTitle": "把简历与岗位做一次对照",
+        "taskDesc": "逐条比对已确认经历与岗位要求，得到覆盖情况与缺口清单。",
+        "ctaText": "开始对照",
+        "ctaH": 44,
+        "ctaW": 114,
+        "flowCount": 6,
+        "flow": [
+          {
+            "cls": "is-progress",
+            "label": "简历进行中",
+            "detail": "已添加 1 份"
+          },
+          {
+            "cls": "is-progress",
+            "label": "岗位 JD进行中",
+            "detail": "已分析 3 个"
+          },
+          {
+            "cls": "is-todo",
+            "label": "匹配分析未开始",
+            "detail": "尚未进行匹配分析"
+          },
+          {
+            "cls": "is-todo",
+            "label": "修改建议未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "is-progress",
+            "label": "行动计划进行中",
+            "detail": "已生成 1 份"
+          },
+          {
+            "cls": "is-todo",
+            "label": "投递未开始",
+            "detail": "尚未开始"
+          }
+        ],
+        "recentCount": 3,
+        "recent": [
+          {
+            "kind": "简历",
+            "title": "PDF",
+            "href": "/resumes/cmu9g8dyt0004ia6cxgfmg58j"
+          },
+          {
+            "kind": "岗位",
+            "title": "AI Native开发实习生",
+            "href": "/jds?jdId=cmu9q7oy00001iaogkq786kgd"
+          },
+          {
+            "kind": "行动计划",
+            "title": "能力提升计划",
+            "href": "/action-plans/cmu9gbolr0049ia6ct7dcxitn"
+          }
+        ],
+        "hasRecentEmpty": false,
+        "recentEmptyTitle": null,
+        "ovCards": 3,
+        "ovEmptyCount": 2,
+        "smallTargetCount": 2,
+        "smallTargets": [
+          {
+            "cls": "btn-ghost personal-center-trigger",
+            "h": 40,
+            "txt": "74个人中心"
+          },
+          {
+            "cls": "btn btn-secondary",
+            "h": 40,
+            "txt": "设置目标"
+          }
+        ],
+        "sidenavPos": "sticky",
+        "tokenBgApp": "#f4f6f9",
+        "tokenTextPrimary": "#14171d",
+        "bodyBg": "rgb(244, 246, 249)",
+        "bodyColor": "rgb(20, 23, 29)",
+        "themeAttr": "light"
+      },
+      "dark": {
+        "overflowX": 0,
+        "themeAttr": "dark",
+        "tokenBgApp": "#0d0f13",
+        "tokenTextPrimary": "#e9ecf1",
+        "bodyBg": "rgb(13, 15, 19)",
+        "bodyColor": "rgb(233, 236, 241)",
+        "flowCount": 6,
+        "taskVisible": true
+      }
+    },
+    {
+      "vp": "1280",
+      "light": {
+        "vw": 1265,
+        "overflowX": 0,
+        "offenderCount": 0,
+        "offenders": [],
+        "hasH1": true,
+        "h1": "工作台",
+        "taskTitle": "把简历与岗位做一次对照",
+        "taskDesc": "逐条比对已确认经历与岗位要求，得到覆盖情况与缺口清单。",
+        "ctaText": "开始对照",
+        "ctaH": 44,
+        "ctaW": 114,
+        "flowCount": 6,
+        "flow": [
+          {
+            "cls": "is-progress",
+            "label": "简历进行中",
+            "detail": "已添加 1 份"
+          },
+          {
+            "cls": "is-progress",
+            "label": "岗位 JD进行中",
+            "detail": "已分析 3 个"
+          },
+          {
+            "cls": "is-todo",
+            "label": "匹配分析未开始",
+            "detail": "尚未进行匹配分析"
+          },
+          {
+            "cls": "is-todo",
+            "label": "修改建议未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "is-progress",
+            "label": "行动计划进行中",
+            "detail": "已生成 1 份"
+          },
+          {
+            "cls": "is-todo",
+            "label": "投递未开始",
+            "detail": "尚未开始"
+          }
+        ],
+        "recentCount": 3,
+        "recent": [
+          {
+            "kind": "简历",
+            "title": "PDF",
+            "href": "/resumes/cmu9g8dyt0004ia6cxgfmg58j"
+          },
+          {
+            "kind": "岗位",
+            "title": "AI Native开发实习生",
+            "href": "/jds?jdId=cmu9q7oy00001iaogkq786kgd"
+          },
+          {
+            "kind": "行动计划",
+            "title": "能力提升计划",
+            "href": "/action-plans/cmu9gbolr0049ia6ct7dcxitn"
+          }
+        ],
+        "hasRecentEmpty": false,
+        "recentEmptyTitle": null,
+        "ovCards": 3,
+        "ovEmptyCount": 2,
+        "smallTargetCount": 2,
+        "smallTargets": [
+          {
+            "cls": "btn-ghost personal-center-trigger",
+            "h": 40,
+            "txt": "74个人中心"
+          },
+          {
+            "cls": "btn btn-secondary",
+            "h": 40,
+            "txt": "设置目标"
+          }
+        ],
+        "sidenavPos": "sticky",
+        "tokenBgApp": "#f4f6f9",
+        "tokenTextPrimary": "#14171d",
+        "bodyBg": "rgb(244, 246, 249)",
+        "bodyColor": "rgb(20, 23, 29)",
+        "themeAttr": "light"
+      },
+      "dark": {
+        "overflowX": 0,
+        "themeAttr": "dark",
+        "tokenBgApp": "#0d0f13",
+        "tokenTextPrimary": "#e9ecf1",
+        "bodyBg": "rgb(13, 15, 19)",
+        "bodyColor": "rgb(233, 236, 241)",
+        "flowCount": 6,
+        "taskVisible": true
+      }
+    },
+    {
+      "vp": "1536",
+      "light": {
+        "vw": 1521,
+        "overflowX": 0,
+        "offenderCount": 0,
+        "offenders": [],
+        "hasH1": true,
+        "h1": "工作台",
+        "taskTitle": "把简历与岗位做一次对照",
+        "taskDesc": "逐条比对已确认经历与岗位要求，得到覆盖情况与缺口清单。",
+        "ctaText": "开始对照",
+        "ctaH": 44,
+        "ctaW": 114,
+        "flowCount": 6,
+        "flow": [
+          {
+            "cls": "is-progress",
+            "label": "简历进行中",
+            "detail": "已添加 1 份"
+          },
+          {
+            "cls": "is-progress",
+            "label": "岗位 JD进行中",
+            "detail": "已分析 3 个"
+          },
+          {
+            "cls": "is-todo",
+            "label": "匹配分析未开始",
+            "detail": "尚未进行匹配分析"
+          },
+          {
+            "cls": "is-todo",
+            "label": "修改建议未开始",
+            "detail": "尚未开始"
+          },
+          {
+            "cls": "is-progress",
+            "label": "行动计划进行中",
+            "detail": "已生成 1 份"
+          },
+          {
+            "cls": "is-todo",
+            "label": "投递未开始",
+            "detail": "尚未开始"
+          }
+        ],
+        "recentCount": 3,
+        "recent": [
+          {
+            "kind": "简历",
+            "title": "PDF",
+            "href": "/resumes/cmu9g8dyt0004ia6cxgfmg58j"
+          },
+          {
+            "kind": "岗位",
+            "title": "AI Native开发实习生",
+            "href": "/jds?jdId=cmu9q7oy00001iaogkq786kgd"
+          },
+          {
+            "kind": "行动计划",
+            "title": "能力提升计划",
+            "href": "/action-plans/cmu9gbolr0049ia6ct7dcxitn"
+          }
+        ],
+        "hasRecentEmpty": false,
+        "recentEmptyTitle": null,
+        "ovCards": 3,
+        "ovEmptyCount": 2,
+        "smallTargetCount": 2,
+        "smallTargets": [
+          {
+            "cls": "btn-ghost personal-center-trigger",
+            "h": 40,
+            "txt": "74个人中心"
+          },
+          {
+            "cls": "btn btn-secondary",
+            "h": 40,
+            "txt": "设置目标"
+          }
+        ],
+        "sidenavPos": "sticky",
+        "tokenBgApp": "#f4f6f9",
+        "tokenTextPrimary": "#14171d",
+        "bodyBg": "rgb(244, 246, 249)",
+        "bodyColor": "rgb(20, 23, 29)",
+        "themeAttr": "light"
+      },
+      "dark": {
+        "overflowX": 0,
+        "themeAttr": "dark",
+        "tokenBgApp": "#0d0f13",
+        "tokenTextPrimary": "#e9ecf1",
+        "bodyBg": "rgb(13, 15, 19)",
+        "bodyColor": "rgb(233, 236, 241)",
+        "flowCount": 6,
+        "taskVisible": true
+      }
+    }
+  ],
+  "empty": {
+    "userId": "cmu7tphg0000iiamglin3qs15",
+    "taskTitle": "上传并确认第一份简历",
+    "ctaText": "上传简历",
+    "flowCount": 6,
+    "flow": [
+      {
+        "cls": "is-todo",
+        "label": "简历未开始",
+        "detail": "尚未开始"
+      },
+      {
+        "cls": "is-todo",
+        "label": "岗位 JD未开始",
+        "detail": "尚未开始"
+      },
+      {
+        "cls": "is-todo",
+        "label": "匹配分析未开始",
+        "detail": "尚未进行匹配分析"
+      },
+      {
+        "cls": "is-todo",
+        "label": "修改建议未开始",
+        "detail": "尚未开始"
+      },
+      {
+        "cls": "is-todo",
+        "label": "行动计划未开始",
+        "detail": "尚未开始"
+      },
+      {
+        "cls": "is-todo",
+        "label": "投递未开始",
+        "detail": "尚未开始"
+      }
+    ],
+    "recentCount": 0,
+    "hasEmptyPanel": true,
+    "emptyTitle": "还没有可继续的内容",
+    "emptyDesc": "上传简历或添加岗位后，最近的记录会出现在这里。",
+    "noticeTitle": "尚未设置当前求职目标",
+    "ovEmpty": "还没有投递记录，去 记录第一次投递。",
+    "overflowX": 0
+  }
+}

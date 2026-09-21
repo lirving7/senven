@@ -1,0 +1,818 @@
+// JobPilot · V1 数据模型（数据脊柱 CandidateState）
+// 事实标记：CONFIRMED / INFERRED / UNCONFIRMED / MISSING
+// 范围纪律：V1 不含 RAG / Agent / 动态面试 / 端侧模型 / 自动投递
+// 用户数据默认隔离：所有业务表均挂 userId
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum FactStatus {
+  CONFIRMED
+  INFERRED
+  UNCONFIRMED
+  MISSING
+}
+
+enum SourceType {
+  TEXT
+  PDF
+  DOCX
+  IMAGE
+}
+
+enum EvidenceSource {
+  RESUME_TEXT
+  USER_STATEMENT
+  OCR
+  JD
+}
+
+enum RequirementCategory {
+  HARD
+  TECH
+  DUTY
+  PLUS
+  EDUCATION
+  MAJOR
+  OTHER
+}
+
+enum Criticality {
+  MUST
+  SHOULD
+  BONUS
+}
+
+enum MatchStatus {
+  HAVE
+  ENHANCE
+  MISSING
+}
+
+enum SuggestionStatus {
+  PENDING
+  ACCEPTED
+  SKIPPED
+}
+
+// T3 · Schema Design v1.1 §3.0：项目成果凭据类型枚举
+enum ResultArtifactKind {
+  REPO
+  DEPLOY
+  DOC
+  SCREENSHOT
+  OTHER
+}
+
+// T3 · LearningTask Tier 1：仅三态；archive 用 archivedAt 表达，不引入 ARCHIVED 状态值
+enum LearningTaskStatus {
+  PLANNED
+  IN_PROGRESS
+  PAUSED
+}
+
+model User {
+  id           String           @id @default(cuid())
+  email        String           @unique
+  displayName  String?
+  passwordHash String?
+  // 自定义头像（Migration #18 授权新增）。存 public 下的相对 URL，例如
+  // /uploads/avatars/{userId}-{randomId}.jpg；NULL = 使用 fallback（首字母）。
+  // 头像由服务端生成安全文件名写入 public/uploads/avatars/，绝不使用用户原始文件名。
+  avatarUrl    String?
+  // 用户自带 LLM API Key（Migration #19 授权新增）。仅存 AES-256-GCM 密文与展示用
+  // last4；明文 Key 永不落库。解密由服务端完成，AAD 绑定 userId（跨用户不可解）。
+  // NULL = 用户未配置自有 Key（provider 走服务器全局 env 配置）。
+  llmApiKeyCipher String?
+  llmApiKeyLast4  String?
+  createdAt    DateTime         @default(now())
+  resumes      Resume[]
+  jds          JobDescription[]
+  matches      MatchRun[]
+  jobApplications JobApplication[]
+  flags        FactFlag[]
+  sessions     Session[]
+  capabilities Capability[]
+  actionPlans  ActionPlan[]
+  projectResults ProjectResult[]  // T3 · DMD §1.4；Schema Design §3.4
+  llmUsages    LlmUsage[]
+  // T3-A2-6：LearningTask 反向关系（Prisma relation metadata；不改变 User 数据库字段）
+  learningTasks LearningTask[]
+  // T4-F-05：Portfolio 反向关系（Prisma relation metadata；零 DDL / 零列 / 零索引 / 零约束）
+  portfolioProjects PortfolioProject[]
+  // T4-F-05：Interview 反向关系（Prisma relation metadata；零 DDL / 零列 / 零索引 / 零约束）
+  interviewSessions InterviewSession[]
+  // T5-B-1：Agent 反向关系（Prisma relation metadata；零 DDL / 零列 / 零索引 / 零约束）
+  agentRuns AgentRun[]
+  // T6-1：求职目标反向关系（Prisma relation metadata；零额外 DDL，仅伴随 CareerGoal.userId FK 的既有索引）
+  careerGoals CareerGoal[]
+}
+
+// 认证：自建 Session（多用户已确认）。只存 token 的哈希，不存明文 token。
+model Session {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tokenHash String   @unique
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+model Resume {
+  id              String     @id @default(cuid())
+  userId          String
+  user            User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  rawText         String
+  sourceType      SourceType
+  parseConfidence Float?
+  confirmedAt     DateTime?
+  createdAt       DateTime   @default(now())
+  skills          Skill[]
+  resumeProjects  ResumeProject[]
+  educations      Education[]
+  experiences     Experience[]
+  matches         MatchRun[]
+  suggestions     ResumeSuggestion[]
+  versions        ResumeVersion[]
+
+  @@index([userId])
+}
+
+model Skill {
+  id          String     @id @default(cuid())
+  resumeId    String
+  resume      Resume     @relation(fields: [resumeId], references: [id], onDelete: Cascade)
+  key         String
+  label       String
+  level       String?
+  status      FactStatus @default(UNCONFIRMED)
+  evidence    Evidence[]
+  createdAt   DateTime   @default(now())
+
+  @@unique([resumeId, key])
+  @@index([resumeId])
+}
+
+// 简历里的「项目经历」。命名与 V2 的「引导项目/作品集」区分，避免一词两义。
+model ResumeProject {
+  id          String     @id @default(cuid())
+  resumeId    String
+  resume      Resume     @relation(fields: [resumeId], references: [id], onDelete: Cascade)
+  name        String
+  role        String?
+  tech        String[]
+  outcome     String?
+  status      FactStatus @default(UNCONFIRMED)
+  evidence    Evidence[]
+  createdAt   DateTime   @default(now())
+
+  @@index([resumeId])
+}
+
+model Education {
+  id          String     @id @default(cuid())
+  resumeId    String
+  resume      Resume     @relation(fields: [resumeId], references: [id], onDelete: Cascade)
+  school      String
+  major       String?
+  degree      String?
+  status      FactStatus @default(UNCONFIRMED)
+  evidence    Evidence[]
+
+  @@index([resumeId])
+}
+
+model Experience {
+  id          String     @id @default(cuid())
+  resumeId    String
+  resume      Resume     @relation(fields: [resumeId], references: [id], onDelete: Cascade)
+  org         String
+  title       String?
+  period      String?
+  status      FactStatus @default(UNCONFIRMED)
+  evidence    Evidence[]
+
+  @@index([resumeId])
+}
+
+model Evidence {
+  id         String         @id @default(cuid())
+  source     EvidenceSource
+  locator    String
+  excerpt    String?
+  skillId    String?
+  skill      Skill?         @relation(fields: [skillId], references: [id], onDelete: Cascade)
+  resumeProjectId String?
+  resumeProject   ResumeProject? @relation(fields: [resumeProjectId], references: [id], onDelete: Cascade)
+  educationId String?
+  education  Education?     @relation(fields: [educationId], references: [id], onDelete: Cascade)
+  experienceId String?
+  experience Experience?    @relation(fields: [experienceId], references: [id], onDelete: Cascade)
+  // T3 · Schema Design v1.1 §3.4：Resume Projection 通过该关系把 Evidence.id 写入 CapabilityEvidence.resumeEvidenceId
+  capabilityEvidences CapabilityEvidence[] @relation("EvidenceToCapabilityEvidence")
+
+  @@index([skillId])
+  @@index([resumeProjectId])
+}
+
+model JobDescription {
+  id          String     @id @default(cuid())
+  userId      String
+  user        User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  rawText     String
+  title       String?
+  company     String?
+  // 归一化后 JD 文本的 sha256，用于「重复 JD」去重（避免重复调用 LLM 付费）
+  contentHash String?
+  createdAt   DateTime   @default(now())
+  reqs        JobRequirement[]
+  matches     MatchRun[]
+  // T6-1：求职目标 ↔ JD 多对多反向关系（relation metadata；零额外 DDL）
+  careerGoalLinks CareerGoalJobDescription[]
+  // T6-2：Application 反向关系（relation metadata；零额外 DDL）
+  applications JobApplication[]
+
+  @@index([userId])
+  @@index([userId, contentHash])
+}
+
+// ─── T6-1 · CareerGoal 求职目标 ──────────────────────────────────────────────
+// 用户自著资源（非 AI Recommendation → Confirm 产物，不触碰 Fact Authority）。
+// status / employmentType 封闭值与 `NOT isCurrent OR status='ACTIVE'` 由 Migration #15
+// raw SQL CHECK 固定；同一用户最多一个 isCurrent=true 由部分唯一索引
+// `CareerGoal_userId_current_key`（Migration #15 raw SQL）保证 —— 刻意不放进 Prisma
+// schema diff 能力范围，由机械守卫直接核验 DB 索引存在。
+
+model CareerGoal {
+  id             String   @id @default(cuid())
+  userId         String
+  name           String
+  position       String
+  location       String?
+  employmentType String
+  status         String   @default("ACTIVE")
+  isCurrent      Boolean  @default(false)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  user User                       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  jds  CareerGoalJobDescription[]
+  // T6-2：Application 反向关系（relation metadata；零额外 DDL）
+  applications JobApplication[]
+
+  @@index([userId])
+}
+
+// M:N 关联（沿用 PortfolioProjectResult 范式：不存 userId，归属经两端主实体；
+// 关联 JD 的 ownership 在写入路径逐项校验）
+model CareerGoalJobDescription {
+  id           String   @id @default(cuid())
+  careerGoalId String
+  jdId         String
+  createdAt    DateTime @default(now())
+
+  careerGoal CareerGoal     @relation(fields: [careerGoalId], references: [id], onDelete: Cascade)
+  jd         JobDescription @relation(fields: [jdId], references: [id], onDelete: Cascade)
+
+  @@unique([careerGoalId, jdId])
+  @@index([jdId])
+}
+
+model JobRequirement {
+  id          String              @id @default(cuid())
+  jdId        String
+  jd          JobDescription      @relation(fields: [jdId], references: [id], onDelete: Cascade)
+  text        String
+  category    RequirementCategory
+  criticality Criticality
+  items       MatchItem[]
+
+  @@index([jdId])
+}
+
+// T4：一次 Resume × JD 匹配 = 一条不可覆盖的历史记录（重新匹配生成新 run）
+model MatchRun {
+  id             String          @id @default(cuid())
+  userId         String
+  user           User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  resumeId       String
+  resume         Resume          @relation(fields: [resumeId], references: [id], onDelete: Cascade)
+  jdId           String
+  jd             JobDescription  @relation(fields: [jdId], references: [id], onDelete: Cascade)
+  matcherVersion String          @default("v1")
+  // 覆盖摘要：{ total, have, enhance, missing, mustTotal, mustHave }
+  summary        Json?
+  createdAt      DateTime        @default(now())
+  items          MatchItem[]
+  actionPlans    ActionPlan[]
+
+  @@index([userId])
+  @@index([resumeId])
+  @@index([jdId])
+}
+
+model MatchItem {
+  id            String              @id @default(cuid())
+  runId         String
+  run           MatchRun            @relation(fields: [runId], references: [id], onDelete: Cascade)
+  requirementId String?
+  requirement   JobRequirement?     @relation(fields: [requirementId], references: [id], onDelete: SetNull)
+  // JD 要求原文，保持 wording
+  reqText       String
+  status        MatchStatus
+  // 快照字段：MatchRun 是历史记录，JD 之后被重新解析也不能改变历史含义
+  category      RequirementCategory
+  criticality   Criticality
+  // 可解释性：为什么这样判断 / 依据是什么 / 原始证据在哪 / 哪些是推断 / 哪些待确认
+  reason        String
+  basisType     String
+  basisDetail   String
+  // 修复 T4 契约的往返缺口：resumeEvidence 是 MatchItemOutput 的字段但此前未落库，读回会丢
+  resumeEvidence String?
+  evidenceRefs  Json                @default("[]")
+  isInference   Boolean             @default(false)
+  needsUserConfirmation Boolean     @default(false)
+  confidence    String              @default("MEDIUM")
+  suggestion    String?
+
+  @@index([runId])
+  @@index([runId, status])
+}
+
+// T6-2：Application Tracker —— JobApplication 扩展（stage 改 String + CHECK，
+// appliedAt 必填、position/careerGoalId/resumeVersionId 可选、jdId 正式 FK RESTRICT；
+// 允许重复申请，故不存在 CareerGoal+JD+ResumeVersion 的 unique 约束）
+model JobApplication {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  company         String
+  jdId            String?
+  jd              JobDescription? @relation(fields: [jdId], references: [id], onDelete: Restrict)
+  careerGoalId    String?
+  careerGoal      CareerGoal?     @relation(fields: [careerGoalId], references: [id], onDelete: Restrict)
+  resumeVersionId String?
+  resumeVersion   ResumeVersion?  @relation(fields: [resumeVersionId], references: [id], onDelete: Restrict)
+  position        String?
+  appliedAt       DateTime @default(now())
+  stage           String   @default("APPLIED")
+  notes           String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([userId])
+  @@index([userId, stage])
+  @@index([careerGoalId])
+  @@index([resumeVersionId])
+  @@index([jdId])
+  @@index([userId, careerGoalId])
+  @@index([userId, appliedAt])
+}
+
+// T2 收尾新增 ①：简历修改建议（模式A 保守修改）
+// verdict 记录写入前事实验证层的判定结果，禁止未经校验的建议落库
+// T6：修改建议。三种类型，after 仅在 REPHRASE 时存在。
+//  schema 增量理由：T2 建立时 only 预留了 before/after 两列，无法表达
+//  「只有指引、不产出内容」这一类（GUIDANCE），也无法回溯到 MatchItem。
+model ResumeSuggestion {
+  id            String           @id @default(cuid())
+  resumeId      String
+  resume        Resume           @relation(fields: [resumeId], references: [id], onDelete: Cascade)
+  matchRunId    String?
+  matchItemRef  String?
+  requirement   String?
+  // REPHRASE 只改表达 / CONFIRM_FACT 先确认事实 / GUIDANCE 只给指引不给内容
+  kind          String           @default("REPHRASE")
+  targetField   String
+  before        String?
+  // 安全不变量：kind = GUIDANCE 时 after 必须为 null
+  after         String?
+  reason        String           @default("")
+  status        SuggestionStatus @default(PENDING)
+  verdict       FactStatus
+  verdictReason String?
+  evidenceRefs  Json             @default("[]")
+  createdAt     DateTime         @default(now())
+
+  @@index([resumeId])
+  @@index([matchRunId])
+}
+
+// T2 收尾新增 ②：简历版本快照（不可变，无 updatedAt）
+// 版本 = 「某份 Resume × 某个 JD」的快照；每份简历有独立版本链
+model ResumeVersion {
+  id        String   @id @default(cuid())
+  resumeId  String
+  resume    Resume   @relation(fields: [resumeId], references: [id], onDelete: Cascade)
+  jdId      String?
+  versionNo Int
+  snapshot  Json
+  pdfUrl    String?
+  createdAt DateTime @default(now())
+
+  // T6-2：Application 反向关系（relation metadata；零额外 DDL）
+  applications JobApplication[]
+
+  @@unique([resumeId, versionNo])
+  @@index([resumeId])
+}
+
+// 事实层拦截记录：任何被阻断的虚构主张都落库，供审计与 T9 用例回归
+model FactFlag {
+  id        String     @id @default(cuid())
+  userId    String
+  user      User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  claimText String
+  reason    String
+  status    FactStatus
+  createdAt DateTime   @default(now())
+
+  @@index([userId])
+}
+
+// ─── V2 · T1 能力层 ─────────────────────────────────────────────
+// 铁律：Capability 不得成为「事实绕过通道」。
+// 学习/项目完成只能把 status 推到 INFERRED/UNCONFIRMED；CONFIRMED 必须用户确认 + 可核验证据。
+
+// ─── V2 · T3 项目成果回流 ─────────────────────────────────────────
+// 验证铁律（Architecture Freeze v1.1 / DMD v1.1 / Schema Design v1.1）：
+//   - 三态：Draft（submittedAt=NULL）→ Submitted（submittedAt≠NULL）→ Revoked（revokedAt≠NULL，终态）
+//   - sourceStepId 为值保存（非 FK；D6-a「历史快照绑定」）
+//   - planId→ActionPlan Restrict（DMD-DR2）；userId→User Cascade（DMD-S4）
+//   - contentFingerprint 可空（DMD-S3）：Draft=NULL，Submitted/Revoked 必存在
+
+model ProjectResult {
+  id                          String          @id @default(cuid())
+  userId                      String
+  user                        User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  planId                      String
+  plan                        ActionPlan      @relation(fields: [planId], references: [id], onDelete: Restrict)
+  sourceStepId                String          // 值保存，非 FK（D6-a）
+  sourceStepTitle             String          // 快照：regenerate 后权威
+  sourceStepTargetRequirement String?         // 快照
+  title                       String
+  summary                     String
+  contentFingerprint          String?         // DMD-S3：Draft=NULL；Submitted/Revoked 必存在
+  createdAt                   DateTime        @default(now())
+  submittedAt                 DateTime?       // NULL = Draft
+  revokedAt                   DateTime?       // 非空 = Revoked（终态）
+  artifacts                   ResultArtifact[]
+  // T4-F-05：Portfolio 反向关系（Prisma relation metadata；零 DDL / 零列 / 零索引 / 零约束）
+  portfolioLinks              PortfolioProjectResult[]
+
+  @@unique([userId, planId, sourceStepId, contentFingerprint])
+  @@index([userId, planId])
+  @@index([userId, submittedAt])
+  @@index([contentFingerprint])
+  @@index([sourceStepId])
+}
+
+model ResultArtifact {
+  id        String              @id @default(cuid())
+  resultId  String
+  result    ProjectResult       @relation(fields: [resultId], references: [id], onDelete: Cascade)
+  kind      ResultArtifactKind
+  url       String?
+  excerpt   String?
+  dedupeKey String
+  createdAt DateTime            @default(now())
+  capabilityEvidences CapabilityEvidence[]
+
+  @@unique([resultId, dedupeKey])
+  @@index([resultId])
+}
+
+model Capability {
+  id        String               @id @default(cuid())
+  userId    String
+  user      User                 @relation(fields: [userId], references: [id], onDelete: Cascade)
+  key       String
+  label     String
+  level     String?
+  status    FactStatus           @default(UNCONFIRMED)
+  source    String
+  createdAt DateTime             @default(now())
+  evidence  CapabilityEvidence[]
+
+  @@unique([userId, key])
+  @@index([userId])
+}
+
+model CapabilityEvidence {
+  id               String          @id @default(cuid())
+  capabilityId     String
+  capability       Capability      @relation(fields: [capabilityId], references: [id], onDelete: Cascade)
+  type             String          // 保持 String；R7 由 CHECK + app 兜底
+  source           String
+  url              String?
+  excerpt          String?
+  // T3 · Schema Design v1.1 §3.3：exactly-one-source (R6) + Restrict (R3)
+  resumeEvidenceId String?
+  resumeEvidence   Evidence?       @relation("EvidenceToCapabilityEvidence", fields: [resumeEvidenceId], references: [id], onDelete: Restrict)
+  resultArtifactId String?
+  resultArtifact   ResultArtifact? @relation(fields: [resultArtifactId], references: [id], onDelete: Restrict)
+  createdAt        DateTime        @default(now())
+
+  @@index([capabilityId])
+  @@index([resumeEvidenceId])
+  @@index([resultArtifactId])
+
+  // T3-A0 / Q6：两个 CHECK（ce_exactly_one_source / ce_type_pointer_consistent）已通过
+  // migration 20260917232000_capability_evidence_checks 正式纳入 Prisma 迁移体系（非 schema 内联声明）。
+  // 注：本环境 Prisma 6.19.3 不解析 schema 内联 @@check 属性，故以「迁移内 raw SQL 幂等登记」为准；
+  //     表达式与活库 pg_constraint 完全一致，语义不变。
+  //   ce_exactly_one_source (R6)：resumeEvidenceId 与 resultArtifactId 恰有一个非空（XOR）。
+  //   ce_type_pointer_consistent (R7)：type 必须与已设置的指针对应。
+}
+
+// ─── V2 · T2 岗位行动计划 ─────────────────────────────────────────
+// 验收铁律：用户主动触发；必须基于指定 MatchRun；LLM 失败不落任何假数据。
+
+model ActionPlan {
+  id         String       @id @default(cuid())
+  userId     String
+  user       User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  matchRunId String
+  matchRun   MatchRun     @relation(fields: [matchRunId], references: [id], onDelete: Cascade)
+  jdId       String?
+  // 目标岗位描述（如「AI 应用工程师」）
+  goal       String
+  // 生成结果三类：已有能力 / 能力缺口 / 建议行动，以 Json 存结构化契约
+  have       Json         @default("[]")
+  gaps       Json         @default("[]")
+  createdAt  DateTime     @default(now())
+  steps      ActionStep[]
+  // T3 · Schema Design v1.1 §3.4：ProjectResult 反向关系；planId→ActionPlan 为 Restrict
+  results    ProjectResult[]
+  // T3-A2-6：LearningTask 反向关系（Prisma relation metadata；不改变 ActionPlan 数据库字段）
+  learningTasks LearningTask[]
+
+  @@index([userId])
+  @@index([matchRunId])
+}
+
+model ActionStep {
+  id                 String     @id @default(cuid())
+  planId             String
+  plan               ActionPlan @relation(fields: [planId], references: [id], onDelete: Cascade)
+  order              Int
+  title              String
+  desc               String
+  // TODO / IN_PROGRESS / DONE
+  status             String     @default("TODO")
+  // 该步骤对应的 JD 要求（可空）
+  targetRequirement  String?
+  createdAt          DateTime   @default(now())
+
+  @@index([planId])
+}
+
+// ─── V2 基础设施：LLM 用量与成本 ───────────────────────────────────
+// 每次 LLM 调用留痕：用户 / 功能 / 请求数 / token / 成本 / 状态。
+
+model LlmUsage {
+  id           String   @id @default(cuid())
+  userId       String
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  feature      String
+  requestCount Int      @default(1)
+  inputTokens  Int      @default(0)
+  outputTokens Int      @default(0)
+  totalTokens  Int      @default(0)
+  // 由 token 与配置单价推算；未配置单价时为 0，token 仍如实记录
+  cost         Float    @default(0)
+  // OK / FAILED / QUOTA_BLOCKED
+  status       String
+  createdAt    DateTime @default(now())
+
+  @@index([userId])
+  @@index([userId, feature, createdAt])
+}
+
+// T3-A2-6 · LearningTask Tier 1（ADR-T3-A2-5 accepted）
+//
+// 治理：
+//   - sourceStepId 为值保存，非 FK（regenerate 后悬空属合法历史态）；
+//   - 业务唯一身份 (userId, actionPlanId, sourceStepId) 由 @@unique 兜底并发；
+//   - archive 用 archivedAt 表达（不引入 ARCHIVED status）；
+//   - status 三态 PLANNED / IN_PROGRESS / PAUSED；
+//   - 必须使用数据库 unique + P2002 reread，不允许 find → create；
+//   - 不写入 Capability / CapabilityEvidence / Skill / ProjectResult / CONFIRMED；
+//   - regenerate 后旧 sourceStepId 与新 sourceStepId 为两个不同执行单元，旧 Task 保留历史快照。
+model LearningTask {
+  id                          String             @id @default(cuid())
+  userId                      String
+  actionPlanId                String
+  sourceStepId                String             // 值保存，非 FK
+  sourceStepTitle             String             // 快照：regenerate 后权威
+  sourceStepTargetRequirement String?            // 快照
+  content                     String?            // 用户学习过程的不透明数据；服务端不得自动解释为 capability/evidence
+  status                      LearningTaskStatus @default(PLANNED)
+  archivedAt                  DateTime?          // 非空 = archived；status 字段不变
+  createdAt                   DateTime           @default(now())
+  updatedAt                   DateTime           @updatedAt
+
+  user       User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  actionPlan ActionPlan @relation(fields: [actionPlanId], references: [id], onDelete: Restrict)
+
+  @@unique([userId, actionPlanId, sourceStepId])
+  @@index([userId, archivedAt])
+  @@index([actionPlanId])
+}
+
+// ─── T4 · Portfolio 作品集（ADR-013 / T4-F-06 ~ T4-F-18）────────────────
+
+model PortfolioProject {
+  id           String   @id @default(cuid())
+  userId       String
+  title        String
+  description  String?
+  displayOrder Int      @default(0)
+  featured     Boolean  @default(false)
+  archivedAt   DateTime?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  user    User                     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  results PortfolioProjectResult[]
+
+  @@index([userId, archivedAt])
+}
+
+model PortfolioProjectResult {
+  id                 String   @id @default(cuid())
+  portfolioProjectId String
+  projectResultId    String
+  displayOrder       Int      @default(0)
+  createdAt          DateTime @default(now())
+
+  portfolioProject PortfolioProject @relation(fields: [portfolioProjectId], references: [id], onDelete: Cascade)
+  projectResult    ProjectResult    @relation(fields: [projectResultId], references: [id], onDelete: Cascade)
+
+  @@unique([portfolioProjectId, projectResultId])
+  @@index([projectResultId])
+}
+
+// T4-4：Interview（模拟面试）—— Migration #12
+model InterviewSession {
+  id        String   @id @default(cuid())
+  userId    String
+  jdId      String?
+  topic     String
+  endedAt   DateTime?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user  User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  turns InterviewTurn[]
+
+  @@index([userId, createdAt])
+}
+
+model InterviewTurn {
+  id        String   @id @default(cuid())
+  sessionId String
+  turnOrder Int
+  question  String
+  answer    String?
+  feedback  Json?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  session InterviewSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  @@unique([sessionId, turnOrder])
+}
+
+// ─── T5-A · RAG-Lite Knowledge Base（ADR-016，Architecture Freeze / NOT AUTHORIZED 实现）────────────────
+// 治理：
+//   - 仅 3 张表：KnowledgeSource / KnowledgeDocument / KnowledgeChunk；
+//   - 无 userId；
+//   - sourceType 为 String，CHECK 约束在 Migration #13 raw SQL 中登记；
+//   - provenance 为不透明 Json，结构语义由 ADR-016 固定；
+//   - search_vector 为 PostgreSQL generated stored tsvector，GIN 索引由 raw SQL 创建；
+//   - 本批模型只支撑后续 RAG retrieval，本轮不实现 ingest / API / Repository / chunker / UI。
+model KnowledgeSource {
+  id          String   @id @default(cuid())
+  key         String   @unique
+  title       String
+  sourceType  String
+  description String?
+  enabled     Boolean  @default(true)
+  provenance  Json
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  documents KnowledgeDocument[]
+}
+
+model KnowledgeDocument {
+  id                 String   @id @default(cuid())
+  sourceId           String
+  source             KnowledgeSource @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+  title              String
+  content            String
+  contentFingerprint String
+  enabled            Boolean  @default(true)
+  language           String   @default("zh")
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  chunks KnowledgeChunk[]
+
+  @@unique([sourceId, contentFingerprint])
+  @@index([sourceId])
+}
+
+model KnowledgeChunk {
+  id          String            @id @default(cuid())
+  documentId  String
+  document    KnowledgeDocument @relation(fields: [documentId], references: [id], onDelete: Cascade)
+  chunkOrder  Int
+  content     String
+  searchText  String
+  chunkHash   String
+  metadata    Json?
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+  searchVector Unsupported("tsvector")
+
+  @@unique([documentId, chunkOrder])
+  @@index([documentId])
+}
+
+// ─── T5-B-1 · Agent Domain Persistence（ADR-016 §18 T5-B 边界；Migration #14）────────
+//
+// 治理：
+//   - 本批**只做持久化 + 领域校验**：零 API / 零 Handler / 零 Tool / 零 LLM / 零 quota；
+//   - `userId` NOT NULL + ON DELETE CASCADE（用户归属唯一锚点）；
+//   - `AgentProposal` **不重复保存 userId**，归属一律经 `AgentProposal → AgentRun → userId`；
+//   - v1 无 Tool Calling / 无 Confirmation / 无 Act（不得引入 `AgentToolCall` / `AgentConfirmation`）；
+//   - `goalKind` / `status` / `kind` 的允许值与状态机由 Migration #14 raw SQL CHECK + domain guard 双重固定；
+//   - 不得写入 Capability / CapabilityEvidence / Evidence / CONFIRMED（非 Fact Authority）。
+model AgentRun {
+  id                    String   @id @default(cuid())
+  userId                String
+  goalKind              String
+  status                String   @default("CREATED")
+  modelVersion          String?
+  semanticVersions      Json     @default("{}")
+  promptTemplateVersion String
+  quotaUsage            Json     @default("{}")
+  providerRequestId     String?
+  errorCode             String?
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+  endedAt               DateTime?
+
+  user      User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  proposals AgentProposal[]
+
+  @@index([userId])
+}
+
+model AgentProposal {
+  id          String   @id @default(cuid())
+  runId       String
+  revision    Int
+  kind        String
+  payload     Json
+  basedOnRefs Json     @default("[]")
+  status      String   @default("ACTIVE")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  run AgentRun @relation(fields: [runId], references: [id], onDelete: Cascade)
+
+  @@unique([runId, revision])
+
+}
+
+/// T6-4-A：Act 执行实体（Confirm → Execute → Result 状态机）。
+/// status 由 DB CHECK 约束兜底白名单（schema 无法表达 CHECK —— 与 T6-2 stage 同类已裁决保留 drift）。
+model AgentAction {
+  id             String   @id @default(cuid())
+  userId         String
+  runId          String?
+  proposalId     String?  @unique
+  toolName       String
+  payload        Json
+  status         String   @default("PROPOSED")
+  idempotencyKey String   @unique
+  result         Json?
+  errorCode      String?
+  errorMessage   String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@index([userId])
+}

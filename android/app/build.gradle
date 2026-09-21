@@ -1,0 +1,51 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.jobpilot.app'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.jobpilot.app"
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName "1.0.0-debug"
+
+        // 应用入口地址：JobPilot 服务所在地址（同 WiFi 可访问）
+        // 局域网内 Next.js dev server 的地址，手机与电脑同 WiFi 时可直接访问。
+        // 切换 WiFi / 换电脑时需改本行重新打包。
+        // 2026-09-21 第二阶段：198.18.0.1 是 Meta Tunnel VPN 接口，属 RFC 6890 保留段，
+        // 真实网络设备无法路由。改为本机 WLAN 接口的私网 IPv4（Intel Wi-Fi 6E AX211，Up 状态）。
+        buildConfigField "String", "APP_URL", "\"http://192.168.1.102:3000\""
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled false
+        }
+    }
+
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
+
+// 零外部依赖：只用 framework 的 WebView，避免 androidx / 第三方库
+dependencies {
+}

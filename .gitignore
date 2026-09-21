@@ -1,0 +1,29 @@
+node_modules/
+.next/
+out/
+build/
+dist/
+coverage/
+
+# 密钥与本机配置：绝不入库
+.env
+.env.local
+.env.*
+!.env.example
+
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Android 封装构建产物与本机配置
+android/app/build/
+android/.gradle/
+android/local.properties
+*.apk
+
+# 内部交接/决策记录：不随公开仓库分发
+/HANDOFF.md
+
+*.tsbuildinfo
+next-env.d.ts

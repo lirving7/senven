@@ -1,0 +1,247 @@
+{
+  "pdfPage": {
+    "url": "/resumes/cmu9ztxul0001iaf8t5dn0dpo/pdf",
+    "h1": "简历 PDF 导出",
+    "h2s": [
+      "基本信息（用于 PDF 顶部）",
+      "版本历史"
+    ],
+    "scopeNote": "模板：单栏 · A4 · 灰度友好。仅导出「已确认」的事实，推断/待确认项不进 PDF。",
+    "hasGenerateBtn": true,
+    "generateBtnText": "生成 PDF",
+    "generateBtnDisabled": false,
+    "backLinks": [
+      {
+        "text": "← 我的简历",
+        "href": "/resumes"
+      }
+    ],
+    "cardCount": 2,
+    "excludedBanner": null,
+    "errBanner": null,
+    "emptyTitle": "生成后这里会出现版本记录，每次生成都会创建新版本",
+    "isErrorPanel": false,
+    "bodyLen": 238,
+    "hasSideNav": true
+  },
+  "viewports": [
+    {
+      "width": 320,
+      "theme": "light",
+      "overflowX": 0,
+      "offenders": [],
+      "btnH": 44,
+      "gridCols": "133px 133px",
+      "bg": "rgb(244, 246, 249)",
+      "h1Count": 1
+    },
+    {
+      "width": 375,
+      "theme": "light",
+      "overflowX": 0,
+      "offenders": [],
+      "btnH": 44,
+      "gridCols": "152.5px 152.5px",
+      "bg": "rgb(244, 246, 249)",
+      "h1Count": 1
+    },
+    {
+      "width": 640,
+      "theme": "light",
+      "overflowX": 0,
+      "offenders": [],
+      "btnH": 44,
+      "gridCols": "285px 285px",
+      "bg": "rgb(244, 246, 249)",
+      "h1Count": 1
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "overflowX": 0,
+      "offenders": [],
+      "btnH": 40,
+      "gridCols": "341px 341px",
+      "bg": "rgb(244, 246, 249)",
+      "h1Count": 1
+    },
+    {
+      "width": 1024,
+      "theme": "light",
+      "overflowX": 0,
+      "offenders": [],
+      "btnH": 40,
+      "gridCols": "355px 355px",
+      "bg": "rgb(244, 246, 249)",
+      "h1Count": 1
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "overflowX": 0,
+      "offenders": [],
+      "btnH": 40,
+      "gridCols": "451px 451px",
+      "bg": "rgb(244, 246, 249)",
+      "h1Count": 1
+    },
+    {
+      "width": 1536,
+      "theme": "light",
+      "overflowX": 0,
+      "offenders": [],
+      "btnH": 40,
+      "gridCols": "563px 563px",
+      "bg": "rgb(244, 246, 249)",
+      "h1Count": 1
+    },
+    {
+      "width": 320,
+      "theme": "dark",
+      "overflowX": 0,
+      "offenders": [],
+      "btnH": 44,
+      "gridCols": "133px 133px",
+      "bg": "rgb(13, 15, 19)",
+      "h1Count": 1
+    },
+    {
+      "width": 375,
+      "theme": "dark",
+      "overflowX": 0,
+      "offenders": [],
+      "btnH": 44,
+      "gridCols": "152.5px 152.5px",
+      "bg": "rgb(13, 15, 19)",
+      "h1Count": 1
+    },
+    {
+      "width": 640,
+      "theme": "dark",
+      "overflowX": 0,
+      "offenders": [],
+      "btnH": 44,
+      "gridCols": "285px 285px",
+      "bg": "rgb(13, 15, 19)",
+      "h1Count": 1
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "overflowX": 0,
+      "offenders": [],
+      "btnH": 40,
+      "gridCols": "341px 341px",
+      "bg": "rgb(13, 15, 19)",
+      "h1Count": 1
+    },
+    {
+      "width": 1024,
+      "theme": "dark",
+      "overflowX": 0,
+      "offenders": [],
+      "btnH": 40,
+      "gridCols": "355px 355px",
+      "bg": "rgb(13, 15, 19)",
+      "h1Count": 1
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "overflowX": 0,
+      "offenders": [],
+      "btnH": 40,
+      "gridCols": "451px 451px",
+      "bg": "rgb(13, 15, 19)",
+      "h1Count": 1
+    },
+    {
+      "width": 1536,
+      "theme": "dark",
+      "overflowX": 0,
+      "offenders": [],
+      "btnH": 40,
+      "gridCols": "563px 563px",
+      "bg": "rgb(13, 15, 19)",
+      "h1Count": 1
+    }
+  ],
+  "download": {
+    "listStatus": 200,
+    "listBody": {
+      "data": {
+        "items": []
+      }
+    }
+  },
+  "foreign": {
+    "status": 200,
+    "body": {
+      "data": {
+        "items": []
+      }
+    }
+  },
+  "netLog": [
+    {
+      "url": "http://127.0.0.1:3001/resumes/cmu9ztxul0001iaf8t5dn0dpo/pdf",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "http://127.0.0.1:3001/_next/static/css/app/layout.css?v=1789919465724",
+      "status": 200,
+      "type": "text/css"
+    },
+    {
+      "url": "http://127.0.0.1:3001/_next/static/chunks/webpack.js?v=1789919465724",
+      "status": 200,
+      "type": "application/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:3001/_next/static/chunks/app-pages-internals.js",
+      "status": 200,
+      "type": "application/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:3001/_next/static/chunks/app/resumes/%5Bid%5D/pdf/page.js",
+      "status": 200,
+      "type": "application/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:3001/_next/static/chunks/app/layout.js",
+      "status": 200,
+      "type": "application/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:3001/_next/static/chunks/main-app.js?v=1789919465724",
+      "status": 200,
+      "type": "application/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:3001/_next/static/chunks/_app-pages-browser_node_modules_next_dist_client_dev_noop-turbopack-hmr_js.js",
+      "status": 200,
+      "type": "application/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/auth/me",
+      "status": 200,
+      "type": "application/json"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/resumes/cmu9ztxul0001iaf8t5dn0dpo/versions",
+      "status": 200,
+      "type": "application/json"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/resumes/cmu9ztxul0001iaf8t5dn0dpo/versions",
+      "status": 200,
+      "type": "application/json"
+    },
+    {
+      "url": "http://127.0.0.1:3001/api/resumes/cmu9ztxul0001iaf8t5dn0dpo/versions",
+      "status": 200,
+      "type": "application/json"
+    }
+  ]
+}
