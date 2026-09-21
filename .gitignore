@@ -1,29 +1,57 @@
+# Dependencies
 node_modules/
+
+# Next.js build outputs
 .next/
 out/
 build/
 dist/
 coverage/
 
-# 密钥与本机配置：绝不入库
+# Environment variables and local secrets
 .env
 .env.local
 .env.*
 !.env.example
 
+# Logs
 *.log
 npm-debug.log*
+
+# OS files
 .DS_Store
 Thumbs.db
 
-# Android 封装构建产物与本机配置
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# TypeScript
+tsconfig.tsbuildinfo
+next-env.d.ts
+
+# Vercel / deploy
+.vercel/
+.turbo/
+
+# Android wrapper build artifacts and local config
 android/app/build/
+android/app/.cxx/
+android/app/.externalNativeBuild/
 android/.gradle/
 android/local.properties
+android/*.iml
+android/.kotlin/
 *.apk
 
-# 内部交接/决策记录：不随公开仓库分发
-/HANDOFF.md
+# Internal / verification artifacts
+tmp-screenshots/
+phase2a-verify-output/
+phase2b1-verify-output/
+phase2b2-verify-output/
+ui-verify-output/
 
-*.tsbuildinfo
-next-env.d.ts
+# Internal handoff notes (not distributed with public repo)
+/HANDOFF.md

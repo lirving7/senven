@@ -1,8 +1,13 @@
 # JobPilot · AI 求职工作台
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
 JobPilot 是一个把「真实经历」变成「可投递、可解释、可追溯求职成果」的本地优先 Web 应用。它围绕一条完整的产品闭环工作：从求职目标与岗位分析开始，到简历对照、缺口分析、行动计划、学习与项目执行、成果与能力沉淀，最终进入作品集、投递跟踪、模拟面试与总览面板。
 
 > 核心原则：**AI 只提供建议，永远不能替你制造事实。** 任何能力认定（CONFIRMED）、简历事实、投递动作都只能由用户显式确认产生。
+
+- **作者**：林建威
+- **开源协议**：MIT License（见 [LICENSE](./LICENSE)）
 
 ## 核心产品流程
 
