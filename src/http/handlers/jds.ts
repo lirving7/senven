@@ -82,8 +82,8 @@ export function createCreateJdHandler(deps: JdsHandlerDeps) {
           throw appError(ERROR_CODE.VALIDATION_FAILED, 'JD 内容在解析后发生变化，请重新解析');
         }
 
-        const userTitle = body.title === undefined ? undefined : body.title.trim().length > 0 ? body.title.trim() : null;
-        const userCompany = body.company === undefined ? undefined : body.company.trim().length > 0 ? body.company.trim() : null;
+        const userTitle = body.title === undefined ? undefined : body.title.trim() || null;
+        const userCompany = body.company === undefined ? undefined : body.company.trim() || null;
         const input = toJobDescriptionCreateInputFromPreview(payload, {
           userId: user.id,
           rawText,
